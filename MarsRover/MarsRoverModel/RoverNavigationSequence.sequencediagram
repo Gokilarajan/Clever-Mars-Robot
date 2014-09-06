@@ -1,0 +1,715 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SequenceDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" dslVersion="1.0.0.0" Id="4c7ffacf-0388-488a-8960-c9dcb6d75853" name="RoverNavigationSequence" linkedPackageId="6f1e732f-61fc-4111-9b5e-52ad1e8881bf" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="5016b56c-08c3-41b1-8cf6-fee3a860518a">
+      <profileInstance Id="81f126e3-3b38-4378-a583-432c099c51ca" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="51a273c3-4cc4-4d75-910c-b56e41aa0206">
+      <profileInstance Id="dcdc9f24-280d-4b9d-9e3b-e13dd9c8b78f" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <interaction Id="6df5a244-f80a-4217-8755-57bdbb380a84" name="RoverNavigationSequence" collapseFragmentsFlag="false" isActiveClass="false" isAbstract="false" isLeaf="false" isReentrant="false">
+        <ownedCommentsInternal>
+          <comment Id="53d20f74-1d15-44cc-a45d-d1aba16f3f93">
+            <elementDefinition Id="17f9febc-66e7-4589-8a5e-150ab6cecdf0" />
+            <body>new MarsRoverController object initiallized with Plateau Object</body>
+            <annotatedElements>
+              <lifelineMoniker Id="48f04d87-6cc0-443c-b2b4-d4cc2e9c54ba" LastKnownName=": a MarsRoverController" />
+            </annotatedElements>
+          </comment>
+          <comment Id="815cb282-909a-4a76-a066-d7e61c3c757d">
+            <elementDefinition Id="a169ced2-3bf7-4187-99cb-8b772fc4ee45" />
+            <body>new MarsRover Object Initiallized with RoverPosition, Plateau and InitialState objects</body>
+            <annotatedElements>
+              <behaviorExecutionSpecificationMoniker Id="bc8a7651-f627-46f7-b735-a41c82bf7556" LastKnownName="BehaviorExecutionSpecification8" />
+              <lifelineMoniker Id="3bf6922b-42e5-4105-bcc5-9eb4fd509861" LastKnownName=": a MarsRover" />
+            </annotatedElements>
+          </comment>
+        </ownedCommentsInternal>
+        <elementDefinition Id="2dd1972f-a9b6-44f8-ba4e-f2c7a1082263" />
+        <fragments>
+          <behaviorExecutionSpecification Id="bc8a7651-f627-46f7-b735-a41c82bf7556" name="BehaviorExecutionSpecification8">
+            <elementDefinition Id="74b32339-42f1-4314-ad48-fd2e9f8c46ee" />
+            <coveredLifelines>
+              <lifelineMoniker Id="48f04d87-6cc0-443c-b2b4-d4cc2e9c54ba" LastKnownName=": a MarsRoverController" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker Id="7d08b1ca-45bb-4d5d-9178-7bd778fe4be2" LastKnownName="ExecutionOccurrenceSpecification16" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker Id="4edf555a-7c37-4f01-80ff-7d30cd380ca0" LastKnownName="ExecutionOccurrenceSpecification15" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker Id="6d28dbf2-eeec-46e0-a389-018715cf3a6d" LastKnownName="MessageOccurrenceSpecification14" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification Id="4edf555a-7c37-4f01-80ff-7d30cd380ca0" name="ExecutionOccurrenceSpecification15">
+            <elementDefinition Id="5ac62339-8da8-42a6-9868-e766bf405024" />
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="364b64e8-4a08-4921-a05f-468650006152" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="48f04d87-6cc0-443c-b2b4-d4cc2e9c54ba" LastKnownName=": a MarsRoverController" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <lostFoundTarget Id="cc2bd383-9dab-4fe2-bfd1-76826188a05f" name="LostFoundTarget4">
+            <elementDefinition Id="473ea094-fb79-401b-9ef9-36bdb163291a" />
+          </lostFoundTarget>
+          <messageOccurrenceSpecification Id="6d28dbf2-eeec-46e0-a389-018715cf3a6d" name="MessageOccurrenceSpecification14">
+            <elementDefinition Id="1a74e3fd-2dc0-4817-b5ea-8416883aff66" />
+            <covered>
+              <lifelineMoniker Id="48f04d87-6cc0-443c-b2b4-d4cc2e9c54ba" LastKnownName=": a MarsRoverController" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification Id="7d08b1ca-45bb-4d5d-9178-7bd778fe4be2" name="ExecutionOccurrenceSpecification16">
+            <elementDefinition Id="98e057e4-56c3-4612-bac9-a9769e9b6256" />
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="89c6fce9-5180-4d49-98a6-586d79d9e376" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="48f04d87-6cc0-443c-b2b4-d4cc2e9c54ba" LastKnownName=": a MarsRoverController" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <behaviorExecutionSpecification Id="e42c3973-e8fd-41d0-8b93-7ffa380a91db" name="BehaviorExecutionSpecification13">
+            <elementDefinition Id="0dbd7540-dde5-4bef-856f-bdb4dd54376b" />
+            <coveredLifelines>
+              <lifelineMoniker Id="48f04d87-6cc0-443c-b2b4-d4cc2e9c54ba" LastKnownName=": a MarsRoverController" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker Id="7c2c906d-738c-4c52-b84f-f9813c49e39e" LastKnownName="ExecutionOccurrenceSpecification26" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker Id="2d53534e-5a5d-4db8-98ae-274bcffcdb65" LastKnownName="ExecutionOccurrenceSpecification25" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker Id="e8fae06e-7651-4e89-ad88-ec610b0e0bad" LastKnownName="MessageOccurrenceSpecification24" />
+              <messageOccurrenceSpecificationMoniker Id="b7d0e4cb-fd52-48a4-8650-26f06a3618f5" LastKnownName="MessageOccurrenceSpecification39" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification Id="2d53534e-5a5d-4db8-98ae-274bcffcdb65" name="ExecutionOccurrenceSpecification25">
+            <elementDefinition Id="1b1e017e-0a20-49d0-a22a-3cb5b76920cc" />
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="57c9d8f0-f66f-4bbd-8dad-9d0bf2b306d8" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="48f04d87-6cc0-443c-b2b4-d4cc2e9c54ba" LastKnownName=": a MarsRoverController" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <lostFoundTarget Id="86fc4b3a-c788-4e60-a2da-54833ee07904" name="LostFoundTarget8">
+            <elementDefinition Id="70d7abba-c323-4c23-9969-7aed5c3a0495" />
+          </lostFoundTarget>
+          <messageOccurrenceSpecification Id="e8fae06e-7651-4e89-ad88-ec610b0e0bad" name="MessageOccurrenceSpecification24">
+            <elementDefinition Id="a30500c2-333b-4fa4-83b4-7fb4304be338" />
+            <covered>
+              <lifelineMoniker Id="48f04d87-6cc0-443c-b2b4-d4cc2e9c54ba" LastKnownName=": a MarsRoverController" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification Id="a12c7f27-1df3-43f3-bc15-f612f1372efd" name="BehaviorExecutionSpecification18">
+            <elementDefinition Id="20cd4298-2847-4dea-ad13-48e99cdbcea0" />
+            <coveredLifelines>
+              <lifelineMoniker Id="3bf6922b-42e5-4105-bcc5-9eb4fd509861" LastKnownName=": a MarsRover" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker Id="9107e9b9-79d2-43b9-8255-5d4bf72a65e4" LastKnownName="ExecutionOccurrenceSpecification36" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker Id="b3387037-0db9-41cb-a576-4438c4df973d" LastKnownName="ExecutionOccurrenceSpecification35" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker Id="53debe3b-187f-4371-b9fe-ce92edee65a5" LastKnownName="MessageOccurrenceSpecification40" />
+              <messageOccurrenceSpecificationMoniker Id="5f27cf97-ca8d-43af-a699-d9cc6a0cfaa6" LastKnownName="MessageOccurrenceSpecification41" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification Id="b3387037-0db9-41cb-a576-4438c4df973d" name="ExecutionOccurrenceSpecification35">
+            <elementDefinition Id="69b2e2b4-a207-43b2-839c-19b82c616e8c" />
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="937e88c8-1804-437b-af8e-2bfd46c64fbc" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="3bf6922b-42e5-4105-bcc5-9eb4fd509861" LastKnownName=": a MarsRover" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="b7d0e4cb-fd52-48a4-8650-26f06a3618f5" name="MessageOccurrenceSpecification39">
+            <elementDefinition Id="20753c96-f26c-41c3-b276-e6de7a4ef8c7" />
+            <covered>
+              <lifelineMoniker Id="48f04d87-6cc0-443c-b2b4-d4cc2e9c54ba" LastKnownName=": a MarsRoverController" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="53debe3b-187f-4371-b9fe-ce92edee65a5" name="MessageOccurrenceSpecification40">
+            <elementDefinition Id="76be4cc8-9bfc-4907-a33c-f48e520348fa" />
+            <covered>
+              <lifelineMoniker Id="3bf6922b-42e5-4105-bcc5-9eb4fd509861" LastKnownName=": a MarsRover" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification Id="c564d6a8-a766-441b-a807-d49543a5c650" name="BehaviorExecutionSpecification19">
+            <elementDefinition Id="720ab74a-0c29-4e23-a92a-29279c3ec4db" />
+            <coveredLifelines>
+              <lifelineMoniker Id="806e95a3-9ff7-4f04-81da-e2c1dce9df29" LastKnownName=": a MarsRoverState" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker Id="5a208f31-5ac7-448a-8420-936fbe393fdf" LastKnownName="ExecutionOccurrenceSpecification38" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker Id="ccad2e66-37a0-4ecd-ad3d-f25aa682728b" LastKnownName="ExecutionOccurrenceSpecification37" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker Id="acf28277-f99c-4600-a455-dab5cc2fa538" LastKnownName="MessageOccurrenceSpecification42" />
+              <messageOccurrenceSpecificationMoniker Id="49de4296-1c24-4c9b-82bc-988ce9020bd6" LastKnownName="MessageOccurrenceSpecification43" />
+              <messageOccurrenceSpecificationMoniker Id="54dea098-f0a0-4f3e-b792-adab9a7cde43" LastKnownName="MessageOccurrenceSpecification45" />
+              <messageOccurrenceSpecificationMoniker Id="9824db87-f7cb-46ab-9c2b-cfc26de3bf93" LastKnownName="MessageOccurrenceSpecification47" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification Id="ccad2e66-37a0-4ecd-ad3d-f25aa682728b" name="ExecutionOccurrenceSpecification37">
+            <elementDefinition Id="efeb38e8-7441-4fc1-95be-d6df4a415c58" />
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="811a36d2-9f73-492e-88f3-3c226362923a" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="806e95a3-9ff7-4f04-81da-e2c1dce9df29" LastKnownName=": a MarsRoverState" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="5f27cf97-ca8d-43af-a699-d9cc6a0cfaa6" name="MessageOccurrenceSpecification41">
+            <elementDefinition Id="4c771771-5274-4f91-ba19-d4d21a6c4841" />
+            <covered>
+              <lifelineMoniker Id="3bf6922b-42e5-4105-bcc5-9eb4fd509861" LastKnownName=": a MarsRover" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="acf28277-f99c-4600-a455-dab5cc2fa538" name="MessageOccurrenceSpecification42">
+            <elementDefinition Id="78ee3798-4255-4ca3-9921-8050396ca242" />
+            <covered>
+              <lifelineMoniker Id="806e95a3-9ff7-4f04-81da-e2c1dce9df29" LastKnownName=": a MarsRoverState" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification Id="9107e9b9-79d2-43b9-8255-5d4bf72a65e4" name="ExecutionOccurrenceSpecification36">
+            <elementDefinition Id="ad4b5097-a375-47b3-908c-87fce031c00b" />
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="628a520f-2eb7-40a4-be52-590ad9358fa8" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="3bf6922b-42e5-4105-bcc5-9eb4fd509861" LastKnownName=": a MarsRover" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <behaviorExecutionSpecification Id="861aa570-208f-4b70-9a19-f14d7b81a5d4" name="BehaviorExecutionSpecification20">
+            <elementDefinition Id="4f70b8b0-eaad-435a-bc04-2214925653f4" />
+            <coveredLifelines>
+              <lifelineMoniker Id="3bf6922b-42e5-4105-bcc5-9eb4fd509861" LastKnownName=": a MarsRover" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker Id="47a6b85a-712e-40d7-9ba4-6615e908184c" LastKnownName="ExecutionOccurrenceSpecification40" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker Id="722599df-135a-4271-abe1-abdac204bcec" LastKnownName="ExecutionOccurrenceSpecification39" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker Id="6a78cea5-9996-4719-9f36-0b61e3fb6cb2" LastKnownName="MessageOccurrenceSpecification44" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification Id="722599df-135a-4271-abe1-abdac204bcec" name="ExecutionOccurrenceSpecification39">
+            <elementDefinition Id="1f13045c-5dc9-4e7a-8621-ebddd0714ec9" />
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="8e5113e7-753c-45ef-a4e0-c814e2b6630d" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="3bf6922b-42e5-4105-bcc5-9eb4fd509861" LastKnownName=": a MarsRover" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="49de4296-1c24-4c9b-82bc-988ce9020bd6" name="MessageOccurrenceSpecification43">
+            <elementDefinition Id="496c2a82-02a5-4f18-b9d6-08641d9707cd" />
+            <covered>
+              <lifelineMoniker Id="806e95a3-9ff7-4f04-81da-e2c1dce9df29" LastKnownName=": a MarsRoverState" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="6a78cea5-9996-4719-9f36-0b61e3fb6cb2" name="MessageOccurrenceSpecification44">
+            <elementDefinition Id="a9b5f549-8cea-4b04-9de6-9f47c8b65a90" />
+            <covered>
+              <lifelineMoniker Id="3bf6922b-42e5-4105-bcc5-9eb4fd509861" LastKnownName=": a MarsRover" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification Id="47a6b85a-712e-40d7-9ba4-6615e908184c" name="ExecutionOccurrenceSpecification40">
+            <elementDefinition Id="a53f868a-5fcf-4a6e-bd85-824314e017ec" />
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="f95f5e31-ab55-40f3-bdc3-86d826819de4" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="3bf6922b-42e5-4105-bcc5-9eb4fd509861" LastKnownName=": a MarsRover" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <behaviorExecutionSpecification Id="81eeb1b3-7d22-4f84-ad3c-67257823c7a3" name="BehaviorExecutionSpecification21">
+            <elementDefinition Id="7d4ea756-49e7-416f-9a46-8b727fb32f2c" />
+            <coveredLifelines>
+              <lifelineMoniker Id="3bf6922b-42e5-4105-bcc5-9eb4fd509861" LastKnownName=": a MarsRover" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker Id="30308312-d5b3-405e-b846-f0089919e5e5" LastKnownName="ExecutionOccurrenceSpecification42" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker Id="3d01daba-6033-4992-a581-9ce29deebc23" LastKnownName="ExecutionOccurrenceSpecification41" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker Id="1158c8b5-92dc-4bd9-9a09-0d23cbadd8f8" LastKnownName="MessageOccurrenceSpecification46" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification Id="3d01daba-6033-4992-a581-9ce29deebc23" name="ExecutionOccurrenceSpecification41">
+            <elementDefinition Id="88cfd932-7833-4cd5-9a97-fd6ba1fe5041" />
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="09bec09b-c274-40e6-bb20-91351a568d7b" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="3bf6922b-42e5-4105-bcc5-9eb4fd509861" LastKnownName=": a MarsRover" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="1158c8b5-92dc-4bd9-9a09-0d23cbadd8f8" name="MessageOccurrenceSpecification46">
+            <elementDefinition Id="7276993f-20cd-4478-826e-17896c1064a2" />
+            <covered>
+              <lifelineMoniker Id="3bf6922b-42e5-4105-bcc5-9eb4fd509861" LastKnownName=": a MarsRover" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="54dea098-f0a0-4f3e-b792-adab9a7cde43" name="MessageOccurrenceSpecification45">
+            <elementDefinition Id="20fb17a1-ed21-434e-a3bf-3d93573561fa" />
+            <covered>
+              <lifelineMoniker Id="806e95a3-9ff7-4f04-81da-e2c1dce9df29" LastKnownName=": a MarsRoverState" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification Id="7c2c906d-738c-4c52-b84f-f9813c49e39e" name="ExecutionOccurrenceSpecification26">
+            <elementDefinition Id="5d1bfa06-7a21-47a7-a8e1-5a53f68383a6" />
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="5d706dec-361d-4f81-9e6b-cff8433fa187" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="48f04d87-6cc0-443c-b2b4-d4cc2e9c54ba" LastKnownName=": a MarsRoverController" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <executionOccurrenceSpecification Id="30308312-d5b3-405e-b846-f0089919e5e5" name="ExecutionOccurrenceSpecification42">
+            <elementDefinition Id="e22f53f5-4b19-44b3-9413-998f1cf7f0eb" />
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="068e4176-9842-4b35-818b-aa27c75490ea" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="3bf6922b-42e5-4105-bcc5-9eb4fd509861" LastKnownName=": a MarsRover" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <behaviorExecutionSpecification Id="857f0ea8-b705-46de-91a9-940d37dd6273" name="BehaviorExecutionSpecification22">
+            <elementDefinition Id="4ffafbb9-9490-4a65-96aa-ab5c1acd8671" />
+            <coveredLifelines>
+              <lifelineMoniker Id="3bf6922b-42e5-4105-bcc5-9eb4fd509861" LastKnownName=": a MarsRover" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker Id="3dc68274-a0cc-4718-94c6-7efaf58ca315" LastKnownName="ExecutionOccurrenceSpecification44" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker Id="a4f2e572-d1d1-4208-9a90-782c081a07fa" LastKnownName="ExecutionOccurrenceSpecification43" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker Id="b9713941-3d50-4a1f-99e5-ad508ec9daad" LastKnownName="MessageOccurrenceSpecification48" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification Id="a4f2e572-d1d1-4208-9a90-782c081a07fa" name="ExecutionOccurrenceSpecification43">
+            <elementDefinition Id="12413e60-bb73-47bf-87a5-798d21a06699" />
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="6f8b0761-153d-41f6-8554-d1ec90394443" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="3bf6922b-42e5-4105-bcc5-9eb4fd509861" LastKnownName=": a MarsRover" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="9824db87-f7cb-46ab-9c2b-cfc26de3bf93" name="MessageOccurrenceSpecification47">
+            <elementDefinition Id="e38082ac-c573-4e05-a99d-63d9f76f6b83" />
+            <covered>
+              <lifelineMoniker Id="806e95a3-9ff7-4f04-81da-e2c1dce9df29" LastKnownName=": a MarsRoverState" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="b9713941-3d50-4a1f-99e5-ad508ec9daad" name="MessageOccurrenceSpecification48">
+            <elementDefinition Id="155f5b58-2297-448d-8bbd-f0e403c21a71" />
+            <covered>
+              <lifelineMoniker Id="3bf6922b-42e5-4105-bcc5-9eb4fd509861" LastKnownName=": a MarsRover" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification Id="5a208f31-5ac7-448a-8420-936fbe393fdf" name="ExecutionOccurrenceSpecification38">
+            <elementDefinition Id="c332c0e9-b11e-4964-97fb-49dd57310446" />
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="bcd49434-8f11-4748-9a86-ab4cb2bdb35f" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="806e95a3-9ff7-4f04-81da-e2c1dce9df29" LastKnownName=": a MarsRoverState" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <executionOccurrenceSpecification Id="3dc68274-a0cc-4718-94c6-7efaf58ca315" name="ExecutionOccurrenceSpecification44">
+            <elementDefinition Id="7304186a-46a9-4bb9-8b77-c017e2bfcdc0" />
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="3e2b1264-c231-41bc-9af4-5201c39fce8e" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="3bf6922b-42e5-4105-bcc5-9eb4fd509861" LastKnownName=": a MarsRover" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <behaviorExecutionSpecification Id="b453751e-cd9f-48ec-9b1f-ca01f8ddd151" name="BehaviorExecutionSpecification23">
+            <elementDefinition Id="72589052-6f20-498a-a96c-210ca44a4082" />
+            <coveredLifelines>
+              <lifelineMoniker Id="48f04d87-6cc0-443c-b2b4-d4cc2e9c54ba" LastKnownName=": a MarsRoverController" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker Id="09b5ad4f-2fe3-4895-91b5-c46b75da7ea1" LastKnownName="ExecutionOccurrenceSpecification46" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker Id="4fa36b7a-e01f-493a-ba08-9e935f644237" LastKnownName="ExecutionOccurrenceSpecification45" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker Id="0ecb1e39-7821-4fd6-aa00-4f84cd203b0e" LastKnownName="MessageOccurrenceSpecification49" />
+              <messageOccurrenceSpecificationMoniker Id="8885bfb1-c6b7-42ba-b3af-51334666af88" LastKnownName="MessageOccurrenceSpecification50" />
+              <messageOccurrenceSpecificationMoniker Id="e9bc5854-d1bd-448f-be9f-e0e767a005d7" LastKnownName="MessageOccurrenceSpecification53" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification Id="4fa36b7a-e01f-493a-ba08-9e935f644237" name="ExecutionOccurrenceSpecification45">
+            <elementDefinition Id="14780d9c-e766-4112-9ad4-cc7b986874e6" />
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="b8a08df1-890e-4999-adf9-b3af58c8db60" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="48f04d87-6cc0-443c-b2b4-d4cc2e9c54ba" LastKnownName=": a MarsRoverController" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <lostFoundTarget Id="9553c53e-9595-4d74-9990-9545765f044c" name="LostFoundTarget9">
+            <elementDefinition Id="cc9459d4-580b-4fd0-a9e2-08b264ef0880" />
+          </lostFoundTarget>
+          <messageOccurrenceSpecification Id="0ecb1e39-7821-4fd6-aa00-4f84cd203b0e" name="MessageOccurrenceSpecification49">
+            <elementDefinition Id="4e10da78-184b-4196-8f5f-552e286caaac" />
+            <covered>
+              <lifelineMoniker Id="48f04d87-6cc0-443c-b2b4-d4cc2e9c54ba" LastKnownName=": a MarsRoverController" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification Id="475cdf6b-bb33-4a4b-a441-b2b808167bf0" name="BehaviorExecutionSpecification24">
+            <elementDefinition Id="e7bdcaa1-cd5a-4f32-9dad-41b8f726f038" />
+            <coveredLifelines>
+              <lifelineMoniker Id="3bf6922b-42e5-4105-bcc5-9eb4fd509861" LastKnownName=": a MarsRover" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker Id="7b6a0461-924b-463c-9d96-7187793051fd" LastKnownName="ExecutionOccurrenceSpecification48" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker Id="da320f87-6e70-4636-bea3-c89816a6df9e" LastKnownName="ExecutionOccurrenceSpecification47" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker Id="39d90e10-8161-4786-8ae4-056e2fb2ddbc" LastKnownName="MessageOccurrenceSpecification51" />
+              <messageOccurrenceSpecificationMoniker Id="7e55fff2-5568-4033-854b-c3bcf3807b0a" LastKnownName="MessageOccurrenceSpecification52" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification Id="da320f87-6e70-4636-bea3-c89816a6df9e" name="ExecutionOccurrenceSpecification47">
+            <elementDefinition Id="0d0a454a-2b45-488d-8565-557b54aeaf5c" />
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="7e1f5b4b-956d-4948-8553-7e44614c0981" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="3bf6922b-42e5-4105-bcc5-9eb4fd509861" LastKnownName=": a MarsRover" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="8885bfb1-c6b7-42ba-b3af-51334666af88" name="MessageOccurrenceSpecification50">
+            <elementDefinition Id="1cfc3aae-ebd4-4d5a-a37a-91aa95d64a27" />
+            <covered>
+              <lifelineMoniker Id="48f04d87-6cc0-443c-b2b4-d4cc2e9c54ba" LastKnownName=": a MarsRoverController" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="39d90e10-8161-4786-8ae4-056e2fb2ddbc" name="MessageOccurrenceSpecification51">
+            <elementDefinition Id="48e00bc6-eb2d-472c-b2cf-dde1d3ac9052" />
+            <covered>
+              <lifelineMoniker Id="3bf6922b-42e5-4105-bcc5-9eb4fd509861" LastKnownName=": a MarsRover" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="7e55fff2-5568-4033-854b-c3bcf3807b0a" name="MessageOccurrenceSpecification52">
+            <elementDefinition Id="bfaa9822-467f-434e-b7da-f1bf83c6e25d" />
+            <covered>
+              <lifelineMoniker Id="3bf6922b-42e5-4105-bcc5-9eb4fd509861" LastKnownName=": a MarsRover" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="e9bc5854-d1bd-448f-be9f-e0e767a005d7" name="MessageOccurrenceSpecification53">
+            <elementDefinition Id="2352236d-c87c-40aa-b451-29f11c1d86ef" />
+            <covered>
+              <lifelineMoniker Id="48f04d87-6cc0-443c-b2b4-d4cc2e9c54ba" LastKnownName=": a MarsRoverController" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification Id="7b6a0461-924b-463c-9d96-7187793051fd" name="ExecutionOccurrenceSpecification48">
+            <elementDefinition Id="561e2b74-65ff-4f69-8d96-9f7a90f3a607" />
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="8876cd84-bbba-4c9c-868b-4e083e51df3d" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="3bf6922b-42e5-4105-bcc5-9eb4fd509861" LastKnownName=": a MarsRover" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <executionOccurrenceSpecification Id="09b5ad4f-2fe3-4895-91b5-c46b75da7ea1" name="ExecutionOccurrenceSpecification46">
+            <elementDefinition Id="b35ddaa5-b346-406d-8e7c-50d2008b7f2d" />
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="25bc4565-0642-439b-b7e8-964f52955407" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="48f04d87-6cc0-443c-b2b4-d4cc2e9c54ba" LastKnownName=": a MarsRoverController" />
+            </covered>
+          </executionOccurrenceSpecification>
+        </fragments>
+        <lifelines>
+          <lifeline Id="48f04d87-6cc0-443c-b2b4-d4cc2e9c54ba" name=": a MarsRoverController" isActor="false" lifelineDisplayName=": a MarsRoverController">
+            <elementDefinition Id="b0ac857c-c8e8-4aae-ac64-2e95ec1d6ed7" />
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker Id="4edf555a-7c37-4f01-80ff-7d30cd380ca0" LastKnownName="ExecutionOccurrenceSpecification15" />
+              <executionOccurrenceSpecificationMoniker Id="7d08b1ca-45bb-4d5d-9178-7bd778fe4be2" LastKnownName="ExecutionOccurrenceSpecification16" />
+              <executionOccurrenceSpecificationMoniker Id="2d53534e-5a5d-4db8-98ae-274bcffcdb65" LastKnownName="ExecutionOccurrenceSpecification25" />
+              <executionOccurrenceSpecificationMoniker Id="7c2c906d-738c-4c52-b84f-f9813c49e39e" LastKnownName="ExecutionOccurrenceSpecification26" />
+              <executionOccurrenceSpecificationMoniker Id="4fa36b7a-e01f-493a-ba08-9e935f644237" LastKnownName="ExecutionOccurrenceSpecification45" />
+              <executionOccurrenceSpecificationMoniker Id="09b5ad4f-2fe3-4895-91b5-c46b75da7ea1" LastKnownName="ExecutionOccurrenceSpecification46" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline Id="3bf6922b-42e5-4105-bcc5-9eb4fd509861" name=": a MarsRover" isActor="false" lifelineDisplayName=": a MarsRover">
+            <elementDefinition Id="0aff2905-98ac-47d6-80dd-d2bc2a8bab21" />
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker Id="b3387037-0db9-41cb-a576-4438c4df973d" LastKnownName="ExecutionOccurrenceSpecification35" />
+              <executionOccurrenceSpecificationMoniker Id="9107e9b9-79d2-43b9-8255-5d4bf72a65e4" LastKnownName="ExecutionOccurrenceSpecification36" />
+              <executionOccurrenceSpecificationMoniker Id="722599df-135a-4271-abe1-abdac204bcec" LastKnownName="ExecutionOccurrenceSpecification39" />
+              <executionOccurrenceSpecificationMoniker Id="47a6b85a-712e-40d7-9ba4-6615e908184c" LastKnownName="ExecutionOccurrenceSpecification40" />
+              <executionOccurrenceSpecificationMoniker Id="3d01daba-6033-4992-a581-9ce29deebc23" LastKnownName="ExecutionOccurrenceSpecification41" />
+              <executionOccurrenceSpecificationMoniker Id="30308312-d5b3-405e-b846-f0089919e5e5" LastKnownName="ExecutionOccurrenceSpecification42" />
+              <executionOccurrenceSpecificationMoniker Id="a4f2e572-d1d1-4208-9a90-782c081a07fa" LastKnownName="ExecutionOccurrenceSpecification43" />
+              <executionOccurrenceSpecificationMoniker Id="3dc68274-a0cc-4718-94c6-7efaf58ca315" LastKnownName="ExecutionOccurrenceSpecification44" />
+              <executionOccurrenceSpecificationMoniker Id="da320f87-6e70-4636-bea3-c89816a6df9e" LastKnownName="ExecutionOccurrenceSpecification47" />
+              <executionOccurrenceSpecificationMoniker Id="7b6a0461-924b-463c-9d96-7187793051fd" LastKnownName="ExecutionOccurrenceSpecification48" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline Id="806e95a3-9ff7-4f04-81da-e2c1dce9df29" name=": a MarsRoverState" isActor="false" lifelineDisplayName=": a MarsRoverState">
+            <elementDefinition Id="ad4cc0df-8397-450d-90c6-39bb8caef276" />
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker Id="ccad2e66-37a0-4ecd-ad3d-f25aa682728b" LastKnownName="ExecutionOccurrenceSpecification37" />
+              <executionOccurrenceSpecificationMoniker Id="5a208f31-5ac7-448a-8420-936fbe393fdf" LastKnownName="ExecutionOccurrenceSpecification38" />
+            </topLevelOccurrences>
+          </lifeline>
+        </lifelines>
+        <messages>
+          <message Id="c4a40189-6531-4457-a054-debb7802fde3" name="InitiallizeRover" messageKind="Found" messageSort="AsynchCall" createSelfMessage="false">
+            <elementDefinition Id="aa8e2b55-b68a-43df-911f-7df5ae0a3c99" />
+            <sendEvent>
+              <lostFoundTargetMoniker Id="cc2bd383-9dab-4fe2-bfd1-76826188a05f" LastKnownName="LostFoundTarget4" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="6d28dbf2-eeec-46e0-a389-018715cf3a6d" LastKnownName="MessageOccurrenceSpecification14" />
+            </receiveEvent>
+          </message>
+          <message Id="482b76a2-38dc-4834-9592-998e292c6658" name="NavigateRover" messageKind="Found" messageSort="AsynchCall" createSelfMessage="false">
+            <elementDefinition Id="92cac9c3-119e-4f24-8a8b-7bf106b53007" />
+            <sendEvent>
+              <lostFoundTargetMoniker Id="86fc4b3a-c788-4e60-a2da-54833ee07904" LastKnownName="LostFoundTarget8" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="e8fae06e-7651-4e89-ad88-ec610b0e0bad" LastKnownName="MessageOccurrenceSpecification24" />
+            </receiveEvent>
+          </message>
+          <message Id="a07fe4d3-8cc8-49d0-b180-5f99e0b9d343" name="Navigate" messageKind="Complete" messageSort="AsynchCall" createSelfMessage="false">
+            <elementDefinition Id="d4d58dea-38d8-4ea3-908c-289e7266361f" />
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="b7d0e4cb-fd52-48a4-8650-26f06a3618f5" LastKnownName="MessageOccurrenceSpecification39" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="53debe3b-187f-4371-b9fe-ce92edee65a5" LastKnownName="MessageOccurrenceSpecification40" />
+            </receiveEvent>
+          </message>
+          <message Id="ec74b849-fb7e-4b74-8067-d67b9e9c3eeb" name="Handle" messageKind="Complete" messageSort="AsynchCall" createSelfMessage="false">
+            <elementDefinition Id="6ddd5d15-9511-4997-9726-50a74e6d6409" />
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="5f27cf97-ca8d-43af-a699-d9cc6a0cfaa6" LastKnownName="MessageOccurrenceSpecification41" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="acf28277-f99c-4600-a455-dab5cc2fa538" LastKnownName="MessageOccurrenceSpecification42" />
+            </receiveEvent>
+          </message>
+          <message Id="6c770f15-21c9-48e3-9a11-2adf8abb7950" name="UpdateDirection" messageKind="Complete" messageSort="AsynchCall" createSelfMessage="false">
+            <elementDefinition Id="727f4594-4402-4d59-bb0c-f7bcd5f4e43d" />
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="49de4296-1c24-4c9b-82bc-988ce9020bd6" LastKnownName="MessageOccurrenceSpecification43" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="6a78cea5-9996-4719-9f36-0b61e3fb6cb2" LastKnownName="MessageOccurrenceSpecification44" />
+            </receiveEvent>
+          </message>
+          <message Id="bb215858-5c5a-4627-ac99-abd539805653" name="UpdateCoordinate" messageKind="Complete" messageSort="AsynchCall" createSelfMessage="false">
+            <elementDefinition Id="784e59bc-7357-4ff3-af42-09c72fe89a5d" />
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="54dea098-f0a0-4f3e-b792-adab9a7cde43" LastKnownName="MessageOccurrenceSpecification45" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="1158c8b5-92dc-4bd9-9a09-0d23cbadd8f8" LastKnownName="MessageOccurrenceSpecification46" />
+            </receiveEvent>
+          </message>
+          <message Id="e2699cc6-6db2-454a-8fc8-4ca91699ffba" name="SetCurrentState" messageKind="Complete" messageSort="AsynchCall" createSelfMessage="false">
+            <elementDefinition Id="6d4942aa-8511-4213-9833-0b1ceb2efad9" />
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="9824db87-f7cb-46ab-9c2b-cfc26de3bf93" LastKnownName="MessageOccurrenceSpecification47" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="b9713941-3d50-4a1f-99e5-ad508ec9daad" LastKnownName="MessageOccurrenceSpecification48" />
+            </receiveEvent>
+          </message>
+          <message Id="452fa573-be64-4cfb-a3bb-8d1028ff22fc" name="CurrentRoverPosition" messageKind="Found" messageSort="AsynchCall" createSelfMessage="false">
+            <elementDefinition Id="95eb117e-117f-49a3-bb1e-00cd607517a5" />
+            <sendEvent>
+              <lostFoundTargetMoniker Id="9553c53e-9595-4d74-9990-9545765f044c" LastKnownName="LostFoundTarget9" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="0ecb1e39-7821-4fd6-aa00-4f84cd203b0e" LastKnownName="MessageOccurrenceSpecification49" />
+            </receiveEvent>
+          </message>
+          <message Id="cd8926c9-167c-4b23-a360-60f326aad4ab" name="CurrentPosition" messageKind="Complete" messageSort="SynchCall" createSelfMessage="false">
+            <elementDefinition Id="98e787ff-402e-4efd-8d43-b3003f439fa9" />
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="8885bfb1-c6b7-42ba-b3af-51334666af88" LastKnownName="MessageOccurrenceSpecification50" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="39d90e10-8161-4786-8ae4-056e2fb2ddbc" LastKnownName="MessageOccurrenceSpecification51" />
+            </receiveEvent>
+          </message>
+          <message Id="647f1074-8c95-424d-9f09-25d400ecca86" name="RoverPosition" messageKind="Complete" messageSort="Reply" createSelfMessage="false">
+            <elementDefinition Id="aee4d1f9-4514-4df2-b8e1-137f914f5eb3" />
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="7e55fff2-5568-4033-854b-c3bcf3807b0a" LastKnownName="MessageOccurrenceSpecification52" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="e9bc5854-d1bd-448f-be9f-e0e767a005d7" LastKnownName="MessageOccurrenceSpecification53" />
+            </receiveEvent>
+          </message>
+        </messages>
+      </interaction>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="364b64e8-4a08-4921-a05f-468650006152" name="ExecutionEvent">
+        <elementDefinition Id="b002d480-47c0-4af6-bf75-c711cfccde39" />
+      </executionEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="89c6fce9-5180-4d49-98a6-586d79d9e376" name="ExecutionEvent">
+        <elementDefinition Id="e9964b3e-8d32-46a8-b162-62b6e44d0ecf" />
+      </executionEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="57c9d8f0-f66f-4bbd-8dad-9d0bf2b306d8" name="ExecutionEvent">
+        <elementDefinition Id="15128c9b-5d3e-42a2-9b9f-e04ef3c85d94" />
+      </executionEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="5d706dec-361d-4f81-9e6b-cff8433fa187" name="ExecutionEvent">
+        <elementDefinition Id="ec12fe53-d331-4276-a7b7-92dfea04ad49" />
+      </executionEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="937e88c8-1804-437b-af8e-2bfd46c64fbc" name="ExecutionEvent">
+        <elementDefinition Id="16b8417e-7d62-41b3-a97a-bec86f2b3d54" />
+      </executionEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="628a520f-2eb7-40a4-be52-590ad9358fa8" name="ExecutionEvent">
+        <elementDefinition Id="007a18ad-ce58-41b0-8431-715dc59e5fb7" />
+      </executionEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="811a36d2-9f73-492e-88f3-3c226362923a" name="ExecutionEvent">
+        <elementDefinition Id="f8782c83-fa2d-4f59-90e0-9251ae05f61f" />
+      </executionEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="bcd49434-8f11-4748-9a86-ab4cb2bdb35f" name="ExecutionEvent">
+        <elementDefinition Id="127e68b7-73f0-496c-8f90-636e8951797e" />
+      </executionEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="8e5113e7-753c-45ef-a4e0-c814e2b6630d" name="ExecutionEvent">
+        <elementDefinition Id="b3280ea0-b1a4-416a-bc42-fcca705e0fcd" />
+      </executionEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="f95f5e31-ab55-40f3-bdc3-86d826819de4" name="ExecutionEvent">
+        <elementDefinition Id="aa231dbc-e892-4d98-8da7-d4df1992a136" />
+      </executionEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="09bec09b-c274-40e6-bb20-91351a568d7b" name="ExecutionEvent">
+        <elementDefinition Id="e36547c3-53fe-4aee-b845-7300387b4be0" />
+      </executionEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="068e4176-9842-4b35-818b-aa27c75490ea" name="ExecutionEvent">
+        <elementDefinition Id="ee3d0f15-17ef-48bf-89ea-757f547799f1" />
+      </executionEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="6f8b0761-153d-41f6-8554-d1ec90394443" name="ExecutionEvent">
+        <elementDefinition Id="9a9aa72c-4cc7-4426-aa15-60596ae291fa" />
+      </executionEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="3e2b1264-c231-41bc-9af4-5201c39fce8e" name="ExecutionEvent">
+        <elementDefinition Id="0dfca33d-97e0-485c-a70e-c39d9ebd2deb" />
+      </executionEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="b8a08df1-890e-4999-adf9-b3af58c8db60" name="ExecutionEvent">
+        <elementDefinition Id="a2e9dd19-9611-4cd2-9c59-31964e4031c1" />
+      </executionEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="25bc4565-0642-439b-b7e8-964f52955407" name="ExecutionEvent">
+        <elementDefinition Id="66d1c69d-5777-4eb0-8263-611b17b8ed3e" />
+      </executionEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="7e1f5b4b-956d-4948-8553-7e44614c0981" name="ExecutionEvent">
+        <elementDefinition Id="3ea85ae4-8cfd-47d4-a368-69087ddfa910" />
+      </executionEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="8876cd84-bbba-4c9c-868b-4e083e51df3d" name="ExecutionEvent">
+        <elementDefinition Id="cc092208-1617-4c11-a74c-f5d52efbc516" />
+      </executionEvent>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="6f1e732f-61fc-4111-9b5e-52ad1e8881bf" name="MarsRoverModel">
+    <elementDefinition Id="4145a1b0-4c49-4117-bf29-6e95974fdb74" />
+  </package>
+</SequenceDesignerModel>

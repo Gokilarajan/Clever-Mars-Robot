@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="8013d4c1-4b09-4297-a960-b7a761582f25" name="MarsRoverController" linkedPackageId="aacad5bc-034f-4542-a3a7-1e1982a31831" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="0e77be4e-af74-429c-8f48-123ea1eaf162">
+      <profileInstance Id="bd6bb23b-5157-47bc-a5d1-93b3b5b2078c" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="813b63f0-bb1c-49ba-b7a3-17159fd209ca">
+      <profileInstance Id="6f495528-4480-49d4-a2a8-66829fc06c82" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="d7be7ba3-e4d1-4db0-8af0-c00cbb88db87" name="IMarsRoverController" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="e5aa60cc-ecce-4278-84fb-2673e471ae2a" />
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="4d9c33ff-8703-41db-8b1d-5b4ca3840dc1" name="MarsRoverController" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="3475fccd-6a9f-4a73-9605-4dcbdcb6f429" />
+        <suppliersInternal>
+          <interfaceRealization Id="c1f6b29f-6693-4ebc-9f82-ad1d686d7812">
+            <interfaceMoniker Id="d7be7ba3-e4d1-4db0-8af0-c00cbb88db87" LastKnownName="IMarsRoverController" />
+            <elementDefinition Id="75043a9f-4850-4821-9dcc-c6124b0dee00" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <targetEnds>
+          <association Id="76ea158b-8d64-4a83-bb68-bd28a6980e9f" isDerived="false" sourceEndRoleName="MarsRoverController" targetEndRoleName="IMarsRover" isLeaf="false" isAbstract="false">
+            <interfaceMoniker Id="be9ab1ff-7966-46cc-b5b5-3ebc445b4cc9" LastKnownName="IMarsRover" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="815224cb-bd94-4ea7-97ae-53a782f2b61a" name="MarsRoverController" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="9e89108c-a5b3-45b1-ae02-5d1d2acc54d7" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c47ec277-d8e4-4ef2-8c54-e50dc8d95bc5" name="IMarsRover" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="fcca53f7-da7a-4f00-a18e-7f78a925d1d3" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="e3526837-c2ca-4e10-9d6d-2fa56ae808f9" />
+          </association>
+          <association Id="fb912b47-1109-4ba4-8a52-17bc127c4e65" isDerived="false" sourceEndRoleName="MarsRoverController" targetEndRoleName="IPlateau" isLeaf="false" isAbstract="false">
+            <interfaceMoniker Id="351d9a53-c929-4fb6-8cd5-a3c0d5979997" LastKnownName="IPlateau" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ba755285-4a90-4d0e-ba67-a47be09a0fab" name="MarsRoverController" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="5f7c7a9f-c7ee-41cd-9916-09f93e1cfc7f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="324668d5-87a3-4af9-8e19-f0a13f7ad047" name="IPlateau" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="31bba716-a389-4b47-806b-45947eed87a7" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="06fd8880-1a0b-4eea-a3ce-e19ff0800864" />
+          </association>
+        </targetEnds>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="be9ab1ff-7966-46cc-b5b5-3ebc445b4cc9" name="IMarsRover" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="3286975d-fb4f-4a94-a44c-91794e845129" />
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="351d9a53-c929-4fb6-8cd5-a3c0d5979997" name="IPlateau" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="92704bb7-3a00-4cbc-b2e3-a089544669f3" />
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="aacad5bc-034f-4542-a3a7-1e1982a31831" name="MarsRoverModel">
+    <elementDefinition Id="4145a1b0-4c49-4117-bf29-6e95974fdb74" />
+  </package>
+</logicalClassDesignerModel>

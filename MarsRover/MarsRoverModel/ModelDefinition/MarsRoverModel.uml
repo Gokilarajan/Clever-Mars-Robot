@@ -1,0 +1,1752 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner"
+  dslVersion="1.0.0.0"
+  Id="4145a1b0-4c49-4117-bf29-6e95974fdb74"
+  name="MarsRoverModel" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
+      <profileInstance
+        Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791"
+        name="StandardProfileL2" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="29349502-908c-4fda-9054-c48619c59ed0">
+      <profileInstance
+        Id="532ea607-fb19-44b8-8502-3351b05452be"
+        name="StandardProfileL3" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <Interface
+        Id="3ff54987-f4d0-43f2-8c90-ca95db455589"
+        name="Interface1"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="da411abd-f908-41c4-8547-985cf068bedf"
+        name="IMarsRoverController"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="fbb39cdb-080f-40ca-b770-d35500a537d6"
+        name="IMarsRover"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="0282fb43-1b83-43bd-b8d4-b2d44075a508"
+        name="MarsRover"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <interfaceRealization
+            Id="ba2f919a-aea0-46da-a7a9-a959a22cd959">
+            <interfaceMoniker
+              Id="fbb39cdb-080f-40ca-b770-d35500a537d6"
+              LastKnownName="IMarsRover"
+              LastKnownLocation="MarsRoverModel.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <targetEnds>
+          <association
+            Id="ebe8d25f-547d-4989-82ce-39b2c3acad79"
+            isDerived="false"
+            sourceEndRoleName="MarsRover"
+            targetEndRoleName="IPosition"
+            isLeaf="false"
+            isAbstract="false">
+            <interfaceMoniker
+              Id="a25d2876-a2a6-4433-a986-60c76eaa53b2"
+              LastKnownName="IPosition"
+              LastKnownLocation="MarsRoverModel.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="1a755fc5-0153-472c-ba9b-d21ef863b589"
+                  name="MarsRover"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="bfd2c9f0-6410-4018-a1ac-1a3b79607df5"
+                  name="IPosition"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="b5fddff9-f3cf-4073-8a8b-a2c5a1cf9f63"
+            isDerived="false"
+            sourceEndRoleName="MarsRover"
+            targetEndRoleName="IPlateau"
+            isLeaf="false"
+            isAbstract="false">
+            <interfaceMoniker
+              Id="32b4c584-3ea4-45ce-842a-30e0f44774cb"
+              LastKnownName="IPlateau"
+              LastKnownLocation="MarsRoverModel.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="128e1035-728b-4d53-8723-ce749045eee1"
+                  name="MarsRover"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="0bd61b61-8159-4105-aa64-9e22b8fccc5e"
+                  name="IPlateau"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="47a66593-cb27-4fc5-b4e1-bfc2862a0d3d"
+            isDerived="false"
+            sourceEndRoleName="MarsRover"
+            targetEndRoleName="RoverState"
+            isLeaf="false"
+            isAbstract="false">
+            <interfaceMoniker
+              Id="f3d1910b-8bb9-4440-998b-82058c78c890"
+              LastKnownName="RoverState"
+              LastKnownLocation="MarsRoverModel.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="bd2f004a-ec8b-4596-8a75-26d6b850bdd5"
+                  name="MarsRover"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="7e32f8a7-c01b-4fb9-8fff-59efdde6fb2c"
+                  name="RoverState"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="f3d1910b-8bb9-4440-998b-82058c78c890"
+        name="RoverState"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="a25d2876-a2a6-4433-a986-60c76eaa53b2"
+        name="IPosition"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="32b4c584-3ea4-45ce-842a-30e0f44774cb"
+        name="IPlateau"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="d5738a3e-4b2b-418e-8a98-c0b69ea2b753"
+        name="RoverState"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="99ef8d9d-e354-4edd-a3fa-a4df6a351af8"
+        name="InitialState"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <interfaceRealization
+            Id="bc825f19-ac4e-4f81-985a-690b8bbd704a">
+            <interfaceMoniker
+              Id="d5738a3e-4b2b-418e-8a98-c0b69ea2b753"
+              LastKnownName="RoverState"
+              LastKnownLocation="MarsRoverModel.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <generalsInternal>
+          <generalization
+            Id="d7be7aed-558b-4030-9629-63d01613eb62"
+            isSubstitutable="false">
+            <classMoniker
+              Id="44d087f6-fa86-4ce0-aa02-be91f4dd339d"
+              LastKnownName="RoverState"
+              LastKnownLocation="MarsRoverModel.uml" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="e98ea765-a463-48a1-8be8-411da5904ce6"
+        name="NorthPointingState"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <interfaceRealization
+            Id="0649c6ed-3ce6-4403-8f6f-4c0b6536148f">
+            <interfaceMoniker
+              Id="d5738a3e-4b2b-418e-8a98-c0b69ea2b753"
+              LastKnownName="RoverState"
+              LastKnownLocation="MarsRoverModel.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <generalsInternal>
+          <generalization
+            Id="bf254500-cf81-4d6b-bd58-189b6e9bd60b"
+            isSubstitutable="false">
+            <classMoniker
+              Id="44d087f6-fa86-4ce0-aa02-be91f4dd339d"
+              LastKnownName="RoverState"
+              LastKnownLocation="MarsRoverModel.uml" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="1b031592-c2b8-4ad6-8fc2-5fdea4786104"
+        name="SouthPointingState"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <interfaceRealization
+            Id="2d4e46d6-1ad9-41e2-8e18-6363923ce1d0">
+            <interfaceMoniker
+              Id="d5738a3e-4b2b-418e-8a98-c0b69ea2b753"
+              LastKnownName="RoverState"
+              LastKnownLocation="MarsRoverModel.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <generalsInternal>
+          <generalization
+            Id="b1e677c8-1180-4981-b4d5-2c6e1f060706"
+            isSubstitutable="false">
+            <classMoniker
+              Id="44d087f6-fa86-4ce0-aa02-be91f4dd339d"
+              LastKnownName="RoverState"
+              LastKnownLocation="MarsRoverModel.uml" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="7a7ae5bd-6c3a-4dea-a99f-23887e9df362"
+        name="EastPointingState"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <interfaceRealization
+            Id="057f30cf-a3e9-4ed2-b3b0-3b8f7c0826fa">
+            <interfaceMoniker
+              Id="d5738a3e-4b2b-418e-8a98-c0b69ea2b753"
+              LastKnownName="RoverState"
+              LastKnownLocation="MarsRoverModel.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <generalsInternal>
+          <generalization
+            Id="6e8378e6-bb42-4001-865f-6d98a29d32a8"
+            isSubstitutable="false">
+            <classMoniker
+              Id="44d087f6-fa86-4ce0-aa02-be91f4dd339d"
+              LastKnownName="RoverState"
+              LastKnownLocation="MarsRoverModel.uml" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="e374fd46-fd76-411b-a012-5810c47395e4"
+        name="WestPointingState"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <interfaceRealization
+            Id="c4891706-d7a9-418c-856d-52b4d12d741b">
+            <interfaceMoniker
+              Id="d5738a3e-4b2b-418e-8a98-c0b69ea2b753"
+              LastKnownName="RoverState"
+              LastKnownLocation="MarsRoverModel.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <generalsInternal>
+          <generalization
+            Id="1438640c-4ffb-4c1b-ae00-d068eb91580f"
+            isSubstitutable="false">
+            <classMoniker
+              Id="44d087f6-fa86-4ce0-aa02-be91f4dd339d"
+              LastKnownName="RoverState"
+              LastKnownLocation="MarsRoverModel.uml" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="44d087f6-fa86-4ce0-aa02-be91f4dd339d"
+        name="RoverState"
+        isAbstract="true"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="e5aa60cc-ecce-4278-84fb-2673e471ae2a"
+        name="IMarsRoverController"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="3475fccd-6a9f-4a73-9605-4dcbdcb6f429"
+        name="MarsRoverController"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <interfaceRealization
+            Id="75043a9f-4850-4821-9dcc-c6124b0dee00">
+            <interfaceMoniker
+              Id="e5aa60cc-ecce-4278-84fb-2673e471ae2a"
+              LastKnownName="IMarsRoverController"
+              LastKnownLocation="MarsRoverModel.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <targetEnds>
+          <association
+            Id="e3526837-c2ca-4e10-9d6d-2fa56ae808f9"
+            isDerived="false"
+            sourceEndRoleName="MarsRoverController"
+            targetEndRoleName="IMarsRover"
+            isLeaf="false"
+            isAbstract="false">
+            <interfaceMoniker
+              Id="3286975d-fb4f-4a94-a44c-91794e845129"
+              LastKnownName="IMarsRover"
+              LastKnownLocation="MarsRoverModel.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="9e89108c-a5b3-45b1-ae02-5d1d2acc54d7"
+                  name="MarsRoverController"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="fcca53f7-da7a-4f00-a18e-7f78a925d1d3"
+                  name="IMarsRover"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="06fd8880-1a0b-4eea-a3ce-e19ff0800864"
+            isDerived="false"
+            sourceEndRoleName="MarsRoverController"
+            targetEndRoleName="IPlateau"
+            isLeaf="false"
+            isAbstract="false">
+            <interfaceMoniker
+              Id="92704bb7-3a00-4cbc-b2e3-a089544669f3"
+              LastKnownName="IPlateau"
+              LastKnownLocation="MarsRoverModel.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5f7c7a9f-c7ee-41cd-9916-09f93e1cfc7f"
+                  name="MarsRoverController"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="31bba716-a389-4b47-806b-45947eed87a7"
+                  name="IPlateau"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="3286975d-fb4f-4a94-a44c-91794e845129"
+        name="IMarsRover"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="92704bb7-3a00-4cbc-b2e3-a089544669f3"
+        name="IPlateau"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="bfaab2be-2970-4bfd-a245-dc6de78c63bd"
+        name="IPosition"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="3032264f-4db0-4cdd-a7e7-553976646818"
+        name="Position"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <interfaceRealization
+            Id="1fc7a298-4826-4fc5-a419-c528138e59fc">
+            <interfaceMoniker
+              Id="bfaab2be-2970-4bfd-a245-dc6de78c63bd"
+              LastKnownName="IPosition"
+              LastKnownLocation="MarsRoverModel.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="3d1ff05b-e75a-4c2b-87b9-e71ee312d7ce"
+        name="Coordinate"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="8b55a5cb-68c6-4e69-873a-86135c2486b4"
+        name="Plateau"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <interfaceRealization
+            Id="89dbe3d6-2d73-4c9d-a145-755cffb86362">
+            <interfaceMoniker
+              Id="32b4c584-3ea4-45ce-842a-30e0f44774cb"
+              LastKnownName="IPlateau"
+              LastKnownLocation="MarsRoverModel.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <interaction
+        Id="2dd1972f-a9b6-44f8-ba4e-f2c7a1082263"
+        name="RoverNavigationSequence"
+        collapseFragmentsFlag="false"
+        isActiveClass="false"
+        isAbstract="false"
+        isLeaf="false"
+        isReentrant="false">
+        <ownedCommentsInternal>
+          <comment
+            Id="17f9febc-66e7-4589-8a5e-150ab6cecdf0">
+            <body>new MarsRoverController object initiallized with Plateau Object</body>
+            <annotatedElements>
+              <lifelineMoniker
+                Id="b0ac857c-c8e8-4aae-ac64-2e95ec1d6ed7"
+                LastKnownName=": a MarsRoverController"
+                LastKnownLocation="MarsRoverModel.uml" />
+            </annotatedElements>
+          </comment>
+          <comment
+            Id="a169ced2-3bf7-4187-99cb-8b772fc4ee45">
+            <body>new MarsRover Object Initiallized with RoverPosition, Plateau and InitialState objects</body>
+            <annotatedElements>
+              <behaviorExecutionSpecificationMoniker
+                Id="74b32339-42f1-4314-ad48-fd2e9f8c46ee"
+                LastKnownName="BehaviorExecutionSpecification8"
+                LastKnownLocation="MarsRoverModel.uml" />
+              <lifelineMoniker
+                Id="0aff2905-98ac-47d6-80dd-d2bc2a8bab21"
+                LastKnownName=": a MarsRover"
+                LastKnownLocation="MarsRoverModel.uml" />
+            </annotatedElements>
+          </comment>
+        </ownedCommentsInternal>
+        <fragments>
+          <behaviorExecutionSpecification
+            Id="74b32339-42f1-4314-ad48-fd2e9f8c46ee"
+            name="BehaviorExecutionSpecification8">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="b0ac857c-c8e8-4aae-ac64-2e95ec1d6ed7"
+                LastKnownName=": a MarsRoverController"
+                LastKnownLocation="MarsRoverModel.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="98e057e4-56c3-4612-bac9-a9769e9b6256"
+                LastKnownName="ExecutionOccurrenceSpecification16"
+                LastKnownLocation="MarsRoverModel.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="5ac62339-8da8-42a6-9868-e766bf405024"
+                LastKnownName="ExecutionOccurrenceSpecification15"
+                LastKnownLocation="MarsRoverModel.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="1a74e3fd-2dc0-4817-b5ea-8416883aff66"
+                LastKnownName="MessageOccurrenceSpecification14"
+                LastKnownLocation="MarsRoverModel.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="5ac62339-8da8-42a6-9868-e766bf405024"
+            name="ExecutionOccurrenceSpecification15">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="b002d480-47c0-4af6-bf75-c711cfccde39"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="MarsRoverModel.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="b0ac857c-c8e8-4aae-ac64-2e95ec1d6ed7"
+                LastKnownName=": a MarsRoverController"
+                LastKnownLocation="MarsRoverModel.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <lostFoundTarget
+            Id="473ea094-fb79-401b-9ef9-36bdb163291a"
+            name="LostFoundTarget4" />
+          <messageOccurrenceSpecification
+            Id="1a74e3fd-2dc0-4817-b5ea-8416883aff66"
+            name="MessageOccurrenceSpecification14">
+            <covered>
+              <lifelineMoniker
+                Id="b0ac857c-c8e8-4aae-ac64-2e95ec1d6ed7"
+                LastKnownName=": a MarsRoverController"
+                LastKnownLocation="MarsRoverModel.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="98e057e4-56c3-4612-bac9-a9769e9b6256"
+            name="ExecutionOccurrenceSpecification16">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="e9964b3e-8d32-46a8-b162-62b6e44d0ecf"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="MarsRoverModel.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="b0ac857c-c8e8-4aae-ac64-2e95ec1d6ed7"
+                LastKnownName=": a MarsRoverController"
+                LastKnownLocation="MarsRoverModel.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="0dbd7540-dde5-4bef-856f-bdb4dd54376b"
+            name="BehaviorExecutionSpecification13">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="b0ac857c-c8e8-4aae-ac64-2e95ec1d6ed7"
+                LastKnownName=": a MarsRoverController"
+                LastKnownLocation="MarsRoverModel.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="5d1bfa06-7a21-47a7-a8e1-5a53f68383a6"
+                LastKnownName="ExecutionOccurrenceSpecification26"
+                LastKnownLocation="MarsRoverModel.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="1b1e017e-0a20-49d0-a22a-3cb5b76920cc"
+                LastKnownName="ExecutionOccurrenceSpecification25"
+                LastKnownLocation="MarsRoverModel.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="a30500c2-333b-4fa4-83b4-7fb4304be338"
+                LastKnownName="MessageOccurrenceSpecification24"
+                LastKnownLocation="MarsRoverModel.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="20753c96-f26c-41c3-b276-e6de7a4ef8c7"
+                LastKnownName="MessageOccurrenceSpecification39"
+                LastKnownLocation="MarsRoverModel.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="1b1e017e-0a20-49d0-a22a-3cb5b76920cc"
+            name="ExecutionOccurrenceSpecification25">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="15128c9b-5d3e-42a2-9b9f-e04ef3c85d94"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="MarsRoverModel.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="b0ac857c-c8e8-4aae-ac64-2e95ec1d6ed7"
+                LastKnownName=": a MarsRoverController"
+                LastKnownLocation="MarsRoverModel.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <lostFoundTarget
+            Id="70d7abba-c323-4c23-9969-7aed5c3a0495"
+            name="LostFoundTarget8" />
+          <messageOccurrenceSpecification
+            Id="a30500c2-333b-4fa4-83b4-7fb4304be338"
+            name="MessageOccurrenceSpecification24">
+            <covered>
+              <lifelineMoniker
+                Id="b0ac857c-c8e8-4aae-ac64-2e95ec1d6ed7"
+                LastKnownName=": a MarsRoverController"
+                LastKnownLocation="MarsRoverModel.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="20cd4298-2847-4dea-ad13-48e99cdbcea0"
+            name="BehaviorExecutionSpecification18">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="0aff2905-98ac-47d6-80dd-d2bc2a8bab21"
+                LastKnownName=": a MarsRover"
+                LastKnownLocation="MarsRoverModel.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="ad4b5097-a375-47b3-908c-87fce031c00b"
+                LastKnownName="ExecutionOccurrenceSpecification36"
+                LastKnownLocation="MarsRoverModel.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="69b2e2b4-a207-43b2-839c-19b82c616e8c"
+                LastKnownName="ExecutionOccurrenceSpecification35"
+                LastKnownLocation="MarsRoverModel.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="76be4cc8-9bfc-4907-a33c-f48e520348fa"
+                LastKnownName="MessageOccurrenceSpecification40"
+                LastKnownLocation="MarsRoverModel.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="4c771771-5274-4f91-ba19-d4d21a6c4841"
+                LastKnownName="MessageOccurrenceSpecification41"
+                LastKnownLocation="MarsRoverModel.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="69b2e2b4-a207-43b2-839c-19b82c616e8c"
+            name="ExecutionOccurrenceSpecification35">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="16b8417e-7d62-41b3-a97a-bec86f2b3d54"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="MarsRoverModel.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="0aff2905-98ac-47d6-80dd-d2bc2a8bab21"
+                LastKnownName=": a MarsRover"
+                LastKnownLocation="MarsRoverModel.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="20753c96-f26c-41c3-b276-e6de7a4ef8c7"
+            name="MessageOccurrenceSpecification39">
+            <covered>
+              <lifelineMoniker
+                Id="b0ac857c-c8e8-4aae-ac64-2e95ec1d6ed7"
+                LastKnownName=": a MarsRoverController"
+                LastKnownLocation="MarsRoverModel.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="76be4cc8-9bfc-4907-a33c-f48e520348fa"
+            name="MessageOccurrenceSpecification40">
+            <covered>
+              <lifelineMoniker
+                Id="0aff2905-98ac-47d6-80dd-d2bc2a8bab21"
+                LastKnownName=": a MarsRover"
+                LastKnownLocation="MarsRoverModel.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="720ab74a-0c29-4e23-a92a-29279c3ec4db"
+            name="BehaviorExecutionSpecification19">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="ad4cc0df-8397-450d-90c6-39bb8caef276"
+                LastKnownName=": a MarsRoverState"
+                LastKnownLocation="MarsRoverModel.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="c332c0e9-b11e-4964-97fb-49dd57310446"
+                LastKnownName="ExecutionOccurrenceSpecification38"
+                LastKnownLocation="MarsRoverModel.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="efeb38e8-7441-4fc1-95be-d6df4a415c58"
+                LastKnownName="ExecutionOccurrenceSpecification37"
+                LastKnownLocation="MarsRoverModel.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="78ee3798-4255-4ca3-9921-8050396ca242"
+                LastKnownName="MessageOccurrenceSpecification42"
+                LastKnownLocation="MarsRoverModel.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="496c2a82-02a5-4f18-b9d6-08641d9707cd"
+                LastKnownName="MessageOccurrenceSpecification43"
+                LastKnownLocation="MarsRoverModel.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="20fb17a1-ed21-434e-a3bf-3d93573561fa"
+                LastKnownName="MessageOccurrenceSpecification45"
+                LastKnownLocation="MarsRoverModel.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="e38082ac-c573-4e05-a99d-63d9f76f6b83"
+                LastKnownName="MessageOccurrenceSpecification47"
+                LastKnownLocation="MarsRoverModel.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="efeb38e8-7441-4fc1-95be-d6df4a415c58"
+            name="ExecutionOccurrenceSpecification37">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="f8782c83-fa2d-4f59-90e0-9251ae05f61f"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="MarsRoverModel.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="ad4cc0df-8397-450d-90c6-39bb8caef276"
+                LastKnownName=": a MarsRoverState"
+                LastKnownLocation="MarsRoverModel.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="4c771771-5274-4f91-ba19-d4d21a6c4841"
+            name="MessageOccurrenceSpecification41">
+            <covered>
+              <lifelineMoniker
+                Id="0aff2905-98ac-47d6-80dd-d2bc2a8bab21"
+                LastKnownName=": a MarsRover"
+                LastKnownLocation="MarsRoverModel.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="78ee3798-4255-4ca3-9921-8050396ca242"
+            name="MessageOccurrenceSpecification42">
+            <covered>
+              <lifelineMoniker
+                Id="ad4cc0df-8397-450d-90c6-39bb8caef276"
+                LastKnownName=": a MarsRoverState"
+                LastKnownLocation="MarsRoverModel.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="ad4b5097-a375-47b3-908c-87fce031c00b"
+            name="ExecutionOccurrenceSpecification36">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="007a18ad-ce58-41b0-8431-715dc59e5fb7"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="MarsRoverModel.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="0aff2905-98ac-47d6-80dd-d2bc2a8bab21"
+                LastKnownName=": a MarsRover"
+                LastKnownLocation="MarsRoverModel.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="4f70b8b0-eaad-435a-bc04-2214925653f4"
+            name="BehaviorExecutionSpecification20">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="0aff2905-98ac-47d6-80dd-d2bc2a8bab21"
+                LastKnownName=": a MarsRover"
+                LastKnownLocation="MarsRoverModel.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="a53f868a-5fcf-4a6e-bd85-824314e017ec"
+                LastKnownName="ExecutionOccurrenceSpecification40"
+                LastKnownLocation="MarsRoverModel.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="1f13045c-5dc9-4e7a-8621-ebddd0714ec9"
+                LastKnownName="ExecutionOccurrenceSpecification39"
+                LastKnownLocation="MarsRoverModel.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="a9b5f549-8cea-4b04-9de6-9f47c8b65a90"
+                LastKnownName="MessageOccurrenceSpecification44"
+                LastKnownLocation="MarsRoverModel.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="1f13045c-5dc9-4e7a-8621-ebddd0714ec9"
+            name="ExecutionOccurrenceSpecification39">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="b3280ea0-b1a4-416a-bc42-fcca705e0fcd"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="MarsRoverModel.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="0aff2905-98ac-47d6-80dd-d2bc2a8bab21"
+                LastKnownName=": a MarsRover"
+                LastKnownLocation="MarsRoverModel.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="496c2a82-02a5-4f18-b9d6-08641d9707cd"
+            name="MessageOccurrenceSpecification43">
+            <covered>
+              <lifelineMoniker
+                Id="ad4cc0df-8397-450d-90c6-39bb8caef276"
+                LastKnownName=": a MarsRoverState"
+                LastKnownLocation="MarsRoverModel.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="a9b5f549-8cea-4b04-9de6-9f47c8b65a90"
+            name="MessageOccurrenceSpecification44">
+            <covered>
+              <lifelineMoniker
+                Id="0aff2905-98ac-47d6-80dd-d2bc2a8bab21"
+                LastKnownName=": a MarsRover"
+                LastKnownLocation="MarsRoverModel.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="a53f868a-5fcf-4a6e-bd85-824314e017ec"
+            name="ExecutionOccurrenceSpecification40">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="aa231dbc-e892-4d98-8da7-d4df1992a136"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="MarsRoverModel.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="0aff2905-98ac-47d6-80dd-d2bc2a8bab21"
+                LastKnownName=": a MarsRover"
+                LastKnownLocation="MarsRoverModel.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="7d4ea756-49e7-416f-9a46-8b727fb32f2c"
+            name="BehaviorExecutionSpecification21">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="0aff2905-98ac-47d6-80dd-d2bc2a8bab21"
+                LastKnownName=": a MarsRover"
+                LastKnownLocation="MarsRoverModel.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="e22f53f5-4b19-44b3-9413-998f1cf7f0eb"
+                LastKnownName="ExecutionOccurrenceSpecification42"
+                LastKnownLocation="MarsRoverModel.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="88cfd932-7833-4cd5-9a97-fd6ba1fe5041"
+                LastKnownName="ExecutionOccurrenceSpecification41"
+                LastKnownLocation="MarsRoverModel.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="7276993f-20cd-4478-826e-17896c1064a2"
+                LastKnownName="MessageOccurrenceSpecification46"
+                LastKnownLocation="MarsRoverModel.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="88cfd932-7833-4cd5-9a97-fd6ba1fe5041"
+            name="ExecutionOccurrenceSpecification41">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="e36547c3-53fe-4aee-b845-7300387b4be0"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="MarsRoverModel.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="0aff2905-98ac-47d6-80dd-d2bc2a8bab21"
+                LastKnownName=": a MarsRover"
+                LastKnownLocation="MarsRoverModel.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="7276993f-20cd-4478-826e-17896c1064a2"
+            name="MessageOccurrenceSpecification46">
+            <covered>
+              <lifelineMoniker
+                Id="0aff2905-98ac-47d6-80dd-d2bc2a8bab21"
+                LastKnownName=": a MarsRover"
+                LastKnownLocation="MarsRoverModel.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="20fb17a1-ed21-434e-a3bf-3d93573561fa"
+            name="MessageOccurrenceSpecification45">
+            <covered>
+              <lifelineMoniker
+                Id="ad4cc0df-8397-450d-90c6-39bb8caef276"
+                LastKnownName=": a MarsRoverState"
+                LastKnownLocation="MarsRoverModel.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="5d1bfa06-7a21-47a7-a8e1-5a53f68383a6"
+            name="ExecutionOccurrenceSpecification26">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="ec12fe53-d331-4276-a7b7-92dfea04ad49"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="MarsRoverModel.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="b0ac857c-c8e8-4aae-ac64-2e95ec1d6ed7"
+                LastKnownName=": a MarsRoverController"
+                LastKnownLocation="MarsRoverModel.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="e22f53f5-4b19-44b3-9413-998f1cf7f0eb"
+            name="ExecutionOccurrenceSpecification42">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="ee3d0f15-17ef-48bf-89ea-757f547799f1"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="MarsRoverModel.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="0aff2905-98ac-47d6-80dd-d2bc2a8bab21"
+                LastKnownName=": a MarsRover"
+                LastKnownLocation="MarsRoverModel.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="4ffafbb9-9490-4a65-96aa-ab5c1acd8671"
+            name="BehaviorExecutionSpecification22">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="0aff2905-98ac-47d6-80dd-d2bc2a8bab21"
+                LastKnownName=": a MarsRover"
+                LastKnownLocation="MarsRoverModel.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="7304186a-46a9-4bb9-8b77-c017e2bfcdc0"
+                LastKnownName="ExecutionOccurrenceSpecification44"
+                LastKnownLocation="MarsRoverModel.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="12413e60-bb73-47bf-87a5-798d21a06699"
+                LastKnownName="ExecutionOccurrenceSpecification43"
+                LastKnownLocation="MarsRoverModel.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="155f5b58-2297-448d-8bbd-f0e403c21a71"
+                LastKnownName="MessageOccurrenceSpecification48"
+                LastKnownLocation="MarsRoverModel.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="12413e60-bb73-47bf-87a5-798d21a06699"
+            name="ExecutionOccurrenceSpecification43">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="9a9aa72c-4cc7-4426-aa15-60596ae291fa"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="MarsRoverModel.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="0aff2905-98ac-47d6-80dd-d2bc2a8bab21"
+                LastKnownName=": a MarsRover"
+                LastKnownLocation="MarsRoverModel.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="e38082ac-c573-4e05-a99d-63d9f76f6b83"
+            name="MessageOccurrenceSpecification47">
+            <covered>
+              <lifelineMoniker
+                Id="ad4cc0df-8397-450d-90c6-39bb8caef276"
+                LastKnownName=": a MarsRoverState"
+                LastKnownLocation="MarsRoverModel.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="155f5b58-2297-448d-8bbd-f0e403c21a71"
+            name="MessageOccurrenceSpecification48">
+            <covered>
+              <lifelineMoniker
+                Id="0aff2905-98ac-47d6-80dd-d2bc2a8bab21"
+                LastKnownName=": a MarsRover"
+                LastKnownLocation="MarsRoverModel.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="c332c0e9-b11e-4964-97fb-49dd57310446"
+            name="ExecutionOccurrenceSpecification38">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="127e68b7-73f0-496c-8f90-636e8951797e"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="MarsRoverModel.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="ad4cc0df-8397-450d-90c6-39bb8caef276"
+                LastKnownName=": a MarsRoverState"
+                LastKnownLocation="MarsRoverModel.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="7304186a-46a9-4bb9-8b77-c017e2bfcdc0"
+            name="ExecutionOccurrenceSpecification44">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="0dfca33d-97e0-485c-a70e-c39d9ebd2deb"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="MarsRoverModel.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="0aff2905-98ac-47d6-80dd-d2bc2a8bab21"
+                LastKnownName=": a MarsRover"
+                LastKnownLocation="MarsRoverModel.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="72589052-6f20-498a-a96c-210ca44a4082"
+            name="BehaviorExecutionSpecification23">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="b0ac857c-c8e8-4aae-ac64-2e95ec1d6ed7"
+                LastKnownName=": a MarsRoverController"
+                LastKnownLocation="MarsRoverModel.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="b35ddaa5-b346-406d-8e7c-50d2008b7f2d"
+                LastKnownName="ExecutionOccurrenceSpecification46"
+                LastKnownLocation="MarsRoverModel.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="14780d9c-e766-4112-9ad4-cc7b986874e6"
+                LastKnownName="ExecutionOccurrenceSpecification45"
+                LastKnownLocation="MarsRoverModel.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="4e10da78-184b-4196-8f5f-552e286caaac"
+                LastKnownName="MessageOccurrenceSpecification49"
+                LastKnownLocation="MarsRoverModel.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="1cfc3aae-ebd4-4d5a-a37a-91aa95d64a27"
+                LastKnownName="MessageOccurrenceSpecification50"
+                LastKnownLocation="MarsRoverModel.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="2352236d-c87c-40aa-b451-29f11c1d86ef"
+                LastKnownName="MessageOccurrenceSpecification53"
+                LastKnownLocation="MarsRoverModel.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="14780d9c-e766-4112-9ad4-cc7b986874e6"
+            name="ExecutionOccurrenceSpecification45">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="a2e9dd19-9611-4cd2-9c59-31964e4031c1"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="MarsRoverModel.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="b0ac857c-c8e8-4aae-ac64-2e95ec1d6ed7"
+                LastKnownName=": a MarsRoverController"
+                LastKnownLocation="MarsRoverModel.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <lostFoundTarget
+            Id="cc9459d4-580b-4fd0-a9e2-08b264ef0880"
+            name="LostFoundTarget9" />
+          <messageOccurrenceSpecification
+            Id="4e10da78-184b-4196-8f5f-552e286caaac"
+            name="MessageOccurrenceSpecification49">
+            <covered>
+              <lifelineMoniker
+                Id="b0ac857c-c8e8-4aae-ac64-2e95ec1d6ed7"
+                LastKnownName=": a MarsRoverController"
+                LastKnownLocation="MarsRoverModel.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="e7bdcaa1-cd5a-4f32-9dad-41b8f726f038"
+            name="BehaviorExecutionSpecification24">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="0aff2905-98ac-47d6-80dd-d2bc2a8bab21"
+                LastKnownName=": a MarsRover"
+                LastKnownLocation="MarsRoverModel.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="561e2b74-65ff-4f69-8d96-9f7a90f3a607"
+                LastKnownName="ExecutionOccurrenceSpecification48"
+                LastKnownLocation="MarsRoverModel.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="0d0a454a-2b45-488d-8565-557b54aeaf5c"
+                LastKnownName="ExecutionOccurrenceSpecification47"
+                LastKnownLocation="MarsRoverModel.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="48e00bc6-eb2d-472c-b2cf-dde1d3ac9052"
+                LastKnownName="MessageOccurrenceSpecification51"
+                LastKnownLocation="MarsRoverModel.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="bfaa9822-467f-434e-b7da-f1bf83c6e25d"
+                LastKnownName="MessageOccurrenceSpecification52"
+                LastKnownLocation="MarsRoverModel.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="0d0a454a-2b45-488d-8565-557b54aeaf5c"
+            name="ExecutionOccurrenceSpecification47">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="3ea85ae4-8cfd-47d4-a368-69087ddfa910"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="MarsRoverModel.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="0aff2905-98ac-47d6-80dd-d2bc2a8bab21"
+                LastKnownName=": a MarsRover"
+                LastKnownLocation="MarsRoverModel.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="1cfc3aae-ebd4-4d5a-a37a-91aa95d64a27"
+            name="MessageOccurrenceSpecification50">
+            <covered>
+              <lifelineMoniker
+                Id="b0ac857c-c8e8-4aae-ac64-2e95ec1d6ed7"
+                LastKnownName=": a MarsRoverController"
+                LastKnownLocation="MarsRoverModel.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="48e00bc6-eb2d-472c-b2cf-dde1d3ac9052"
+            name="MessageOccurrenceSpecification51">
+            <covered>
+              <lifelineMoniker
+                Id="0aff2905-98ac-47d6-80dd-d2bc2a8bab21"
+                LastKnownName=": a MarsRover"
+                LastKnownLocation="MarsRoverModel.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="bfaa9822-467f-434e-b7da-f1bf83c6e25d"
+            name="MessageOccurrenceSpecification52">
+            <covered>
+              <lifelineMoniker
+                Id="0aff2905-98ac-47d6-80dd-d2bc2a8bab21"
+                LastKnownName=": a MarsRover"
+                LastKnownLocation="MarsRoverModel.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="2352236d-c87c-40aa-b451-29f11c1d86ef"
+            name="MessageOccurrenceSpecification53">
+            <covered>
+              <lifelineMoniker
+                Id="b0ac857c-c8e8-4aae-ac64-2e95ec1d6ed7"
+                LastKnownName=": a MarsRoverController"
+                LastKnownLocation="MarsRoverModel.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="561e2b74-65ff-4f69-8d96-9f7a90f3a607"
+            name="ExecutionOccurrenceSpecification48">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="cc092208-1617-4c11-a74c-f5d52efbc516"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="MarsRoverModel.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="0aff2905-98ac-47d6-80dd-d2bc2a8bab21"
+                LastKnownName=": a MarsRover"
+                LastKnownLocation="MarsRoverModel.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="b35ddaa5-b346-406d-8e7c-50d2008b7f2d"
+            name="ExecutionOccurrenceSpecification46">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="66d1c69d-5777-4eb0-8263-611b17b8ed3e"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="MarsRoverModel.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="b0ac857c-c8e8-4aae-ac64-2e95ec1d6ed7"
+                LastKnownName=": a MarsRoverController"
+                LastKnownLocation="MarsRoverModel.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+        </fragments>
+        <lifelines>
+          <lifeline
+            Id="b0ac857c-c8e8-4aae-ac64-2e95ec1d6ed7"
+            name=": a MarsRoverController"
+            isActor="false"
+            lifelineDisplayName=": a MarsRoverController">
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="5ac62339-8da8-42a6-9868-e766bf405024"
+                LastKnownName="ExecutionOccurrenceSpecification15"
+                LastKnownLocation="MarsRoverModel.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="98e057e4-56c3-4612-bac9-a9769e9b6256"
+                LastKnownName="ExecutionOccurrenceSpecification16"
+                LastKnownLocation="MarsRoverModel.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="1b1e017e-0a20-49d0-a22a-3cb5b76920cc"
+                LastKnownName="ExecutionOccurrenceSpecification25"
+                LastKnownLocation="MarsRoverModel.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="5d1bfa06-7a21-47a7-a8e1-5a53f68383a6"
+                LastKnownName="ExecutionOccurrenceSpecification26"
+                LastKnownLocation="MarsRoverModel.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="14780d9c-e766-4112-9ad4-cc7b986874e6"
+                LastKnownName="ExecutionOccurrenceSpecification45"
+                LastKnownLocation="MarsRoverModel.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="b35ddaa5-b346-406d-8e7c-50d2008b7f2d"
+                LastKnownName="ExecutionOccurrenceSpecification46"
+                LastKnownLocation="MarsRoverModel.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="0aff2905-98ac-47d6-80dd-d2bc2a8bab21"
+            name=": a MarsRover"
+            isActor="false"
+            lifelineDisplayName=": a MarsRover">
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="69b2e2b4-a207-43b2-839c-19b82c616e8c"
+                LastKnownName="ExecutionOccurrenceSpecification35"
+                LastKnownLocation="MarsRoverModel.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="ad4b5097-a375-47b3-908c-87fce031c00b"
+                LastKnownName="ExecutionOccurrenceSpecification36"
+                LastKnownLocation="MarsRoverModel.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="1f13045c-5dc9-4e7a-8621-ebddd0714ec9"
+                LastKnownName="ExecutionOccurrenceSpecification39"
+                LastKnownLocation="MarsRoverModel.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="a53f868a-5fcf-4a6e-bd85-824314e017ec"
+                LastKnownName="ExecutionOccurrenceSpecification40"
+                LastKnownLocation="MarsRoverModel.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="88cfd932-7833-4cd5-9a97-fd6ba1fe5041"
+                LastKnownName="ExecutionOccurrenceSpecification41"
+                LastKnownLocation="MarsRoverModel.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="e22f53f5-4b19-44b3-9413-998f1cf7f0eb"
+                LastKnownName="ExecutionOccurrenceSpecification42"
+                LastKnownLocation="MarsRoverModel.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="12413e60-bb73-47bf-87a5-798d21a06699"
+                LastKnownName="ExecutionOccurrenceSpecification43"
+                LastKnownLocation="MarsRoverModel.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="7304186a-46a9-4bb9-8b77-c017e2bfcdc0"
+                LastKnownName="ExecutionOccurrenceSpecification44"
+                LastKnownLocation="MarsRoverModel.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="0d0a454a-2b45-488d-8565-557b54aeaf5c"
+                LastKnownName="ExecutionOccurrenceSpecification47"
+                LastKnownLocation="MarsRoverModel.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="561e2b74-65ff-4f69-8d96-9f7a90f3a607"
+                LastKnownName="ExecutionOccurrenceSpecification48"
+                LastKnownLocation="MarsRoverModel.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="ad4cc0df-8397-450d-90c6-39bb8caef276"
+            name=": a MarsRoverState"
+            isActor="false"
+            lifelineDisplayName=": a MarsRoverState">
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="efeb38e8-7441-4fc1-95be-d6df4a415c58"
+                LastKnownName="ExecutionOccurrenceSpecification37"
+                LastKnownLocation="MarsRoverModel.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="c332c0e9-b11e-4964-97fb-49dd57310446"
+                LastKnownName="ExecutionOccurrenceSpecification38"
+                LastKnownLocation="MarsRoverModel.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+        </lifelines>
+        <messages>
+          <message
+            Id="aa8e2b55-b68a-43df-911f-7df5ae0a3c99"
+            name="InitiallizeRover"
+            messageKind="Found"
+            messageSort="AsynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <lostFoundTargetMoniker
+                Id="473ea094-fb79-401b-9ef9-36bdb163291a"
+                LastKnownName="LostFoundTarget4"
+                LastKnownLocation="MarsRoverModel.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="1a74e3fd-2dc0-4817-b5ea-8416883aff66"
+                LastKnownName="MessageOccurrenceSpecification14"
+                LastKnownLocation="MarsRoverModel.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="92cac9c3-119e-4f24-8a8b-7bf106b53007"
+            name="NavigateRover"
+            messageKind="Found"
+            messageSort="AsynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <lostFoundTargetMoniker
+                Id="70d7abba-c323-4c23-9969-7aed5c3a0495"
+                LastKnownName="LostFoundTarget8"
+                LastKnownLocation="MarsRoverModel.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="a30500c2-333b-4fa4-83b4-7fb4304be338"
+                LastKnownName="MessageOccurrenceSpecification24"
+                LastKnownLocation="MarsRoverModel.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="d4d58dea-38d8-4ea3-908c-289e7266361f"
+            name="Navigate"
+            messageKind="Complete"
+            messageSort="AsynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="20753c96-f26c-41c3-b276-e6de7a4ef8c7"
+                LastKnownName="MessageOccurrenceSpecification39"
+                LastKnownLocation="MarsRoverModel.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="76be4cc8-9bfc-4907-a33c-f48e520348fa"
+                LastKnownName="MessageOccurrenceSpecification40"
+                LastKnownLocation="MarsRoverModel.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="6ddd5d15-9511-4997-9726-50a74e6d6409"
+            name="Handle"
+            messageKind="Complete"
+            messageSort="AsynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="4c771771-5274-4f91-ba19-d4d21a6c4841"
+                LastKnownName="MessageOccurrenceSpecification41"
+                LastKnownLocation="MarsRoverModel.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="78ee3798-4255-4ca3-9921-8050396ca242"
+                LastKnownName="MessageOccurrenceSpecification42"
+                LastKnownLocation="MarsRoverModel.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="727f4594-4402-4d59-bb0c-f7bcd5f4e43d"
+            name="UpdateDirection"
+            messageKind="Complete"
+            messageSort="AsynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="496c2a82-02a5-4f18-b9d6-08641d9707cd"
+                LastKnownName="MessageOccurrenceSpecification43"
+                LastKnownLocation="MarsRoverModel.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="a9b5f549-8cea-4b04-9de6-9f47c8b65a90"
+                LastKnownName="MessageOccurrenceSpecification44"
+                LastKnownLocation="MarsRoverModel.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="784e59bc-7357-4ff3-af42-09c72fe89a5d"
+            name="UpdateCoordinate"
+            messageKind="Complete"
+            messageSort="AsynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="20fb17a1-ed21-434e-a3bf-3d93573561fa"
+                LastKnownName="MessageOccurrenceSpecification45"
+                LastKnownLocation="MarsRoverModel.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="7276993f-20cd-4478-826e-17896c1064a2"
+                LastKnownName="MessageOccurrenceSpecification46"
+                LastKnownLocation="MarsRoverModel.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="6d4942aa-8511-4213-9833-0b1ceb2efad9"
+            name="SetCurrentState"
+            messageKind="Complete"
+            messageSort="AsynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="e38082ac-c573-4e05-a99d-63d9f76f6b83"
+                LastKnownName="MessageOccurrenceSpecification47"
+                LastKnownLocation="MarsRoverModel.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="155f5b58-2297-448d-8bbd-f0e403c21a71"
+                LastKnownName="MessageOccurrenceSpecification48"
+                LastKnownLocation="MarsRoverModel.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="95eb117e-117f-49a3-bb1e-00cd607517a5"
+            name="CurrentRoverPosition"
+            messageKind="Found"
+            messageSort="AsynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <lostFoundTargetMoniker
+                Id="cc9459d4-580b-4fd0-a9e2-08b264ef0880"
+                LastKnownName="LostFoundTarget9"
+                LastKnownLocation="MarsRoverModel.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="4e10da78-184b-4196-8f5f-552e286caaac"
+                LastKnownName="MessageOccurrenceSpecification49"
+                LastKnownLocation="MarsRoverModel.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="98e787ff-402e-4efd-8d43-b3003f439fa9"
+            name="CurrentPosition"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="1cfc3aae-ebd4-4d5a-a37a-91aa95d64a27"
+                LastKnownName="MessageOccurrenceSpecification50"
+                LastKnownLocation="MarsRoverModel.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="48e00bc6-eb2d-472c-b2cf-dde1d3ac9052"
+                LastKnownName="MessageOccurrenceSpecification51"
+                LastKnownLocation="MarsRoverModel.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="aee4d1f9-4514-4df2-b8e1-137f914f5eb3"
+            name="RoverPosition"
+            messageKind="Complete"
+            messageSort="Reply"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="bfaa9822-467f-434e-b7da-f1bf83c6e25d"
+                LastKnownName="MessageOccurrenceSpecification52"
+                LastKnownLocation="MarsRoverModel.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="2352236d-c87c-40aa-b451-29f11c1d86ef"
+                LastKnownName="MessageOccurrenceSpecification53"
+                LastKnownLocation="MarsRoverModel.uml" />
+            </receiveEvent>
+          </message>
+        </messages>
+      </interaction>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="b002d480-47c0-4af6-bf75-c711cfccde39"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="e9964b3e-8d32-46a8-b162-62b6e44d0ecf"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="15128c9b-5d3e-42a2-9b9f-e04ef3c85d94"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="ec12fe53-d331-4276-a7b7-92dfea04ad49"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="16b8417e-7d62-41b3-a97a-bec86f2b3d54"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="007a18ad-ce58-41b0-8431-715dc59e5fb7"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="f8782c83-fa2d-4f59-90e0-9251ae05f61f"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="127e68b7-73f0-496c-8f90-636e8951797e"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="b3280ea0-b1a4-416a-bc42-fcca705e0fcd"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="aa231dbc-e892-4d98-8da7-d4df1992a136"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="e36547c3-53fe-4aee-b845-7300387b4be0"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="ee3d0f15-17ef-48bf-89ea-757f547799f1"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="9a9aa72c-4cc7-4426-aa15-60596ae291fa"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="0dfca33d-97e0-485c-a70e-c39d9ebd2deb"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="a2e9dd19-9611-4cd2-9c59-31964e4031c1"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="66d1c69d-5777-4eb0-8263-611b17b8ed3e"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="3ea85ae4-8cfd-47d4-a368-69087ddfa910"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="cc092208-1617-4c11-a74c-f5d52efbc516"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+  </packagedElements>
+  <primitiveType
+    Id="220a3521-e091-4221-bae9-3ef9018e845c"
+    name="Integer"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+    name="Boolean"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+    name="String"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="3ab42e7d-4969-445a-b209-471f5cb8209c"
+    name="UnlimitedNatural"
+    isAbstract="false"
+    isLeaf="false" />
+</modelStoreModel>

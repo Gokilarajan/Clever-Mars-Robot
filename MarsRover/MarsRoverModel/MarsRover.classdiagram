@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="3082b2e7-013b-4227-b499-aa970dea3793" name="MarsRover" linkedPackageId="5c59293e-69a4-4471-95d3-6613e700003b" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="4b2b6be7-45ac-4154-8686-2bd24e9a6107" name="IMarsRover" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="fbb39cdb-080f-40ca-b770-d35500a537d6" />
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="72f85c5a-b542-4825-bf7d-e1cec6e98eb8" name="MarsRover" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="0282fb43-1b83-43bd-b8d4-b2d44075a508" />
+        <suppliersInternal>
+          <interfaceRealization Id="fab81cd3-5fb1-488d-bf09-0f089cd736fc">
+            <interfaceMoniker Id="4b2b6be7-45ac-4154-8686-2bd24e9a6107" LastKnownName="IMarsRover" />
+            <elementDefinition Id="ba2f919a-aea0-46da-a7a9-a959a22cd959" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <targetEnds>
+          <association Id="4ccfa1f5-ff7b-48fe-8884-a16b2633e013" isDerived="false" sourceEndRoleName="MarsRover" targetEndRoleName="IPosition" isLeaf="false" isAbstract="false">
+            <interfaceMoniker Id="c0f29388-2dc6-4c6f-8c60-c4e578eca493" LastKnownName="IPosition" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="7bf32019-f532-4b8c-b4f0-75ff49deeb7d" name="MarsRover" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="1a755fc5-0153-472c-ba9b-d21ef863b589" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="698dd638-a43b-4dcd-9c75-b68e550e300b" name="IPosition" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="bfd2c9f0-6410-4018-a1ac-1a3b79607df5" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="ebe8d25f-547d-4989-82ce-39b2c3acad79" />
+          </association>
+          <association Id="e09e9ea1-2b2c-467b-b029-40b51178027c" isDerived="false" sourceEndRoleName="MarsRover" targetEndRoleName="IPlateau" isLeaf="false" isAbstract="false">
+            <interfaceMoniker Id="f97c8c8a-8ef8-4b7a-9e25-5226c7016f44" LastKnownName="IPlateau" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="808656a1-9a85-4af4-b4ea-d9b3740379fc" name="MarsRover" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="128e1035-728b-4d53-8723-ce749045eee1" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="fabe6932-3375-4e89-b8f8-68773f797422" name="IPlateau" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="0bd61b61-8159-4105-aa64-9e22b8fccc5e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="b5fddff9-f3cf-4073-8a8b-a2c5a1cf9f63" />
+          </association>
+          <association Id="28054965-dadd-4c85-880b-66bbdb66bfcf" isDerived="false" sourceEndRoleName="MarsRover" targetEndRoleName="RoverState" isLeaf="false" isAbstract="false">
+            <interfaceMoniker Id="0892736f-4312-4f1d-97c2-ecce082061a2" LastKnownName="RoverState" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a1b86e42-9231-470f-a275-9b6629d0472b" name="MarsRover" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="bd2f004a-ec8b-4596-8a75-26d6b850bdd5" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c7479099-9101-454a-b62b-94c7099a8158" name="RoverState" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="7e32f8a7-c01b-4fb9-8fff-59efdde6fb2c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="47a66593-cb27-4fc5-b4e1-bfc2862a0d3d" />
+          </association>
+        </targetEnds>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="0892736f-4312-4f1d-97c2-ecce082061a2" name="RoverState" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f3d1910b-8bb9-4440-998b-82058c78c890" />
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="c0f29388-2dc6-4c6f-8c60-c4e578eca493" name="IPosition" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="a25d2876-a2a6-4433-a986-60c76eaa53b2" />
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="f97c8c8a-8ef8-4b7a-9e25-5226c7016f44" name="IPlateau" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="32b4c584-3ea4-45ce-842a-30e0f44774cb" />
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="a55b7d54-c56d-4756-88f9-637a62795fe1" name="Plateau" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="8b55a5cb-68c6-4e69-873a-86135c2486b4" />
+        <suppliersInternal>
+          <interfaceRealization Id="4f9739fb-b4af-433c-b6fe-9751fc05758e">
+            <interfaceMoniker Id="f97c8c8a-8ef8-4b7a-9e25-5226c7016f44" LastKnownName="IPlateau" />
+            <elementDefinition Id="89dbe3d6-2d73-4c9d-a145-755cffb86362" />
+          </interfaceRealization>
+        </suppliersInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="5c59293e-69a4-4471-95d3-6613e700003b" name="MarsRoverModel">
+    <elementDefinition Id="4145a1b0-4c49-4117-bf29-6e95974fdb74" />
+    <profileInstances>
+      <packageHasProfileInstances Id="8db10026-d4d8-4eca-b646-9bdb98b5b8da">
+        <profileInstance Id="08c785f1-7d48-4dbd-a8e2-2e8644c43fcf" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="2f40f321-59e0-4984-84f3-c7b1e64b155f">
+        <profileInstance Id="cf8f0aba-0e71-49b4-bedd-92031ad670b8" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</logicalClassDesignerModel>

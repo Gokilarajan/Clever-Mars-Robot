@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="78e02db3-6825-4df7-8f2e-3286a5e3cd57" name="MarsRoverStates" linkedPackageId="cde24940-1c72-4f95-9dce-44e5d9a08473" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="90458d68-873e-48dd-8b5d-a2fe71341bf9">
+      <profileInstance Id="2ddc8537-dffe-4a3e-86d0-56675e60ca17" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="989c6d47-8e76-4d1f-99ed-d33641a6bf60">
+      <profileInstance Id="7d48f349-5bd0-47a6-abbc-e550412ce6e5" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="55722a95-9249-49df-93fc-ec9a5f6f095f" name="InitialState" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="99ef8d9d-e354-4edd-a3fa-a4df6a351af8" />
+        <generalsInternal>
+          <generalization Id="a164f617-0c74-4268-8bff-60fd557a96a9" isSubstitutable="false">
+            <classMoniker Id="20df5e68-021b-4034-b710-ff63a1b9e9ff" LastKnownName="RoverState" />
+            <elementDefinition Id="d7be7aed-558b-4030-9629-63d01613eb62" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="ed761aca-2149-4ef3-9c6a-1bca10802e0f" name="NorthPointingState" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="e98ea765-a463-48a1-8be8-411da5904ce6" />
+        <generalsInternal>
+          <generalization Id="a50ecd37-a0ee-4a67-be12-053e4d3b211b" isSubstitutable="false">
+            <classMoniker Id="20df5e68-021b-4034-b710-ff63a1b9e9ff" LastKnownName="RoverState" />
+            <elementDefinition Id="bf254500-cf81-4d6b-bd58-189b6e9bd60b" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="a918f995-8f2e-4310-8117-239452881189" name="SouthPointingState" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="1b031592-c2b8-4ad6-8fc2-5fdea4786104" />
+        <generalsInternal>
+          <generalization Id="badb4590-ae83-4635-90db-f579b284c46e" isSubstitutable="false">
+            <classMoniker Id="20df5e68-021b-4034-b710-ff63a1b9e9ff" LastKnownName="RoverState" />
+            <elementDefinition Id="b1e677c8-1180-4981-b4d5-2c6e1f060706" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="e9570019-65ee-46ce-b1aa-c4c5aa545e39" name="EastPointingState" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="7a7ae5bd-6c3a-4dea-a99f-23887e9df362" />
+        <generalsInternal>
+          <generalization Id="f906cb43-1f04-466a-af08-99450096212d" isSubstitutable="false">
+            <classMoniker Id="20df5e68-021b-4034-b710-ff63a1b9e9ff" LastKnownName="RoverState" />
+            <elementDefinition Id="6e8378e6-bb42-4001-865f-6d98a29d32a8" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="f9983dfd-9b09-42c3-8094-dda084cc304c" name="WestPointingState" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="e374fd46-fd76-411b-a012-5810c47395e4" />
+        <generalsInternal>
+          <generalization Id="e9cb064b-c1a0-488d-913f-c061e31fd5aa" isSubstitutable="false">
+            <classMoniker Id="20df5e68-021b-4034-b710-ff63a1b9e9ff" LastKnownName="RoverState" />
+            <elementDefinition Id="1438640c-4ffb-4c1b-ae00-d068eb91580f" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="20df5e68-021b-4034-b710-ff63a1b9e9ff" name="RoverState" isAbstract="true" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="44d087f6-fa86-4ce0-aa02-be91f4dd339d" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="cde24940-1c72-4f95-9dce-44e5d9a08473" name="MarsRoverModel">
+    <elementDefinition Id="4145a1b0-4c49-4117-bf29-6e95974fdb74" />
+  </package>
+</logicalClassDesignerModel>

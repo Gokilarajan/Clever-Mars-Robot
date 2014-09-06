@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Mars Rover Solution</title>
+</head>
+<body style="font-family:'Gill Sans MT';">
+    <h1 tabindex="10">Mars Rover Solution</h1>
+    <h2>Design Assumptions:</h2>
+
+    <ul style="color:blue;">
+        <li> All the required inputs are to be passed mandatorily with the format mentioned in the problem statement</li>
+        <li> All inputs are to be given in upper case as mentioned in the problem statement</li>
+    </ul>
+
+    <h2>Project Details:</h2>
+
+    <ul style="color:blue;">
+        <li>This Solution is developed using C# Language over .Net 4.5 Framework</li>
+        <li>The Solution contains three projects as mentioned below,
+            <ul>
+                <li>MarsRover Project containing the actual implementation of the problem statement</li>
+                <li>RoverTests Project containing Test Methods for all possible scenarios in the solution</li>
+                <li>MarsRoverModel Project containing class diagrams and a sequence diagram to illustrate the design</li>
+            </ul>
+        </li>
+            
+    </ul>
+
+    <h2>Evaluation Details:</h2>
+
+    <ul style="color:blue;">
+        <li>There are two approaches this solution can be evaluated as mentioned below
+            <ul>
+                <li>In the RoverTests project under MarsRoverControllerTest class following tests are written to confirm the working nature of this solution
+                    <ul style="color:green;">
+                        <li>MarsRoverController_NavigateRover_Pass12N_LMLMLMLMM_Expect13N</li>
+                        <li>MarsRoverController_NavigateRover_Pass33E_MMRMMRMRRM_Expect51E</li>
+                        <li>MarsRoverController_NavigateRover_Pass55S_LLLMRMRMLLLRRR_Expect55E</li>
+                        <li>MarsRoverController_NavigateRover_Pass66S_LRM_ExpectException</li>
+                        <li>MarsRoverController_NavigateRover_PassMinus11N_LRM_ExpectException</li>
+                        <li>MarsRoverController_NavigateRover_Pass55Error_LRM_ExpectException</li>
+                        <li>MarsRoverController_NavigateRover_Pass30W_RMLLMRR_Expect30N</li>
+                        <li>MarsRoverController_NavigateRover_Pass00S_MMMMMLMMM_Expect30E</li>
+                        <li>MarsRoverController_NavigateRover_Pass50E_MMMMMLMMM_Expect53N</li>
+                        <li>MarsRoverController_NavigateRover_Pass50E_MMMMMLMMMMMMRMMMMMLLM_Expect45W</li>
+                    </ul>
+                </li>
+                <li>By running the application in Console mode and passing the input in the format mentioned in the Problem Statement</li>
+            </ul>
+        </li>
+
+    </ul>
+</body>
+</html>

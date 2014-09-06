@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="e456b5b2-1df5-4208-9d74-51d6a8d5adfa" name="CommonTypes" linkedPackageId="6dd2f348-31ea-4a9f-81b6-8a183260f589" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="1afc7871-8ab7-4eb8-98ee-8e32e676d8ee" name="IPosition" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="bfaab2be-2970-4bfd-a245-dc6de78c63bd" />
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="3c29bd96-1ee5-4213-8244-0186751beedc" name="Position" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="3032264f-4db0-4cdd-a7e7-553976646818" />
+        <suppliersInternal>
+          <interfaceRealization Id="c62de659-face-481d-87a0-b85121be7609">
+            <interfaceMoniker Id="1afc7871-8ab7-4eb8-98ee-8e32e676d8ee" LastKnownName="IPosition" />
+            <elementDefinition Id="1fc7a298-4826-4fc5-a419-c528138e59fc" />
+          </interfaceRealization>
+        </suppliersInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="bd6be748-bd47-4362-9a08-430176900b84" name="Coordinate" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="3d1ff05b-e75a-4c2b-87b9-e71ee312d7ce" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="6dd2f348-31ea-4a9f-81b6-8a183260f589" name="MarsRoverModel">
+    <elementDefinition Id="4145a1b0-4c49-4117-bf29-6e95974fdb74" />
+    <profileInstances>
+      <packageHasProfileInstances Id="3ddad69c-8d54-41e8-a96a-1625df110e41">
+        <profileInstance Id="9ad22133-ba21-447c-9ca7-9048005dcad2" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="4e02c49e-cf19-489a-a3d2-b822f83c5fce">
+        <profileInstance Id="8c5e3e08-6281-4e10-a94c-62a53bc42378" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</logicalClassDesignerModel>

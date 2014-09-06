@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{6EC43B28-C799-4B76-8794-D134F93F3916}"
+	ProjectSection(SolutionItems) = preProject
+		LocalTestRun.testrunconfig = LocalTestRun.testrunconfig
+		MarsRover.vsmdi = MarsRover.vsmdi
+		Readme.html = Readme.html
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarsRover", "MarsRover\MarsRover.csproj", "{79A2D1DF-05FD-4467-AA8A-7E7F11AF1822}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RoverTests", "RoverTests\RoverTests.csproj", "{3CBDBA44-5B90-4FF0-9925-E1D9552C494A}"
+EndProject
+Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "MarsRoverModel", "MarsRoverModel\MarsRoverModel.modelproj", "{2539FA26-B9E2-4E05-BBAD-438E8C215067}"
+EndProject
+Global
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = MarsRover.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{79A2D1DF-05FD-4467-AA8A-7E7F11AF1822}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79A2D1DF-05FD-4467-AA8A-7E7F11AF1822}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79A2D1DF-05FD-4467-AA8A-7E7F11AF1822}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79A2D1DF-05FD-4467-AA8A-7E7F11AF1822}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3CBDBA44-5B90-4FF0-9925-E1D9552C494A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3CBDBA44-5B90-4FF0-9925-E1D9552C494A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3CBDBA44-5B90-4FF0-9925-E1D9552C494A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3CBDBA44-5B90-4FF0-9925-E1D9552C494A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2539FA26-B9E2-4E05-BBAD-438E8C215067}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2539FA26-B9E2-4E05-BBAD-438E8C215067}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2539FA26-B9E2-4E05-BBAD-438E8C215067}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2539FA26-B9E2-4E05-BBAD-438E8C215067}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

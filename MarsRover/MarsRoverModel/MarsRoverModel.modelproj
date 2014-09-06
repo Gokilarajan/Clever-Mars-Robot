@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2539fa26-b9e2-4e05-bbad-438e8c215067}</ProjectGuid>
+    <ArchitectureToolsVersion>2.0.0.0</ArchitectureToolsVersion>
+    <Name>MarsRoverModel</Name>
+    <RootNamespace>MarsRoverModel</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\ArchitectureTools\Microsoft.VisualStudio.TeamArchitect.ModelingProject.targets" Condition="'$(VSToolsPath)' != ''" />
+  <ItemGroup>
+    <Content Include="RoverNavigationSequence.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="RoverNavigationSequence.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>RoverNavigationSequence.sequencediagram</DependentUpon>
+    </Content>
+    <Folder Include="ModelDefinition\" />
+    <Content Include="CommonTypes.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="CommonTypes.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>CommonTypes.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="MarsRover.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="MarsRover.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>MarsRover.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="MarsRoverController.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="MarsRoverController.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>MarsRoverController.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="MarsRoverStates.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="MarsRoverStates.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>MarsRoverStates.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="ModelDefinition\MarsRoverModel.uml">
+      <SubType>Content</SubType>
+    </Content>
+  </ItemGroup>
+</Project>
