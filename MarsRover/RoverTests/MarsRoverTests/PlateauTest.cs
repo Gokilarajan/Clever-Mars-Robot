@@ -1,7 +1,7 @@
-﻿using Rover.AtMars;
+using Rover.AtMars;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Rover.Common;
-
+ 
 namespace MarsRoverTests
 {
     /// <summary>
